@@ -1,0 +1,45 @@
+{
+  "server": "http://REDACTED-LAN-HOST:8089/v1/chat/completions",
+  "model": "qwen3-coder-next-a3b",
+  "aggregate_tps": 96.89788373417433,
+  "per_agent_avg_tps": 23.961240992170573,
+  "total_wall": 25.583634073998837,
+  "total_tokens": 2479,
+  "results": [
+    {
+      "name": "LRU Cache Implementation",
+      "tokens": 391,
+      "wall": 17.100313494003785,
+      "tps": 22.865397754616957,
+      "response_excerpt": "```python\nclass Node:\n    def __init__(self, key, value):\n        self.key = key\n        self.value = value\n        self.prev = None\n        self.next = None\n\nclass LRUCache:\n    def __init__(self, capacity: int):\n        self.capacity = capacity\n        self.cache = {}\n        self.head = Node(0, 0"
+    },
+    {
+      "name": "Async Rate Limiter",
+      "tokens": 347,
+      "wall": 15.528773993006325,
+      "tps": 22.345740849879725,
+      "response_excerpt": "```python\nimport asyncio\nimport time\n\n\nclass RateLimiter:\n    def __init__(self, rate: float, burst: int):\n        self._rate = rate\n        self._burst = burst\n        self._tokens = float(burst)\n        self._last_update = time.monotonic()\n        self._lock = asyncio.Lock()\n\n    def _refill(self)"
+    },
+    {
+      "name": "Recursive Descent Parser",
+      "tokens": 722,
+      "wall": 25.582522489006806,
+      "tps": 28.222493159979553,
+      "response_excerpt": "```python\ndef evaluate(expr: str) -> float:\n    if not expr:\n        raise ValueError(\"Empty expression\")\n    \n    # Tokenize the expression\n    tokens = []\n    i = 0\n    while i < len(expr):\n        c = expr[i]\n        if c.isspace():\n            i += 1\n            continue\n        elif c.isdigit()"
+    },
+    {
+      "name": "Trie with Autocomplete",
+      "tokens": 507,
+      "wall": 21.9027975229983,
+      "tps": 23.147803104006215,
+      "response_excerpt": "```python\nclass TrieNode:\n    def __init__(self):\n        self.children = {}\n        self.is_end_of_word = False\n\nclass Trie:\n    def __init__(self):\n        self.root = TrieNode()\n    \n    def insert(self, word: str) -> None:\n        node = self.root\n        for char in word:\n            if char no"
+    },
+    {
+      "name": "Event Emitter with Typed Events",
+      "tokens": 512,
+      "wall": 22.045501200002036,
+      "tps": 23.22477009237042,
+      "response_excerpt": "```python\nfrom typing import Callable, Dict, List, Optional, Any\nimport weakref\n\n\nclass EventEmitter:\n    def __init__(self):\n        self._listeners: Dict[str, List[Callable]] = {}\n        self._once_listeners: Dict[str, List[Callable]] = {}\n\n    def on(self, event: str, callback: Callable) -> Call"
+    }
+  ]
+}

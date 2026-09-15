@@ -1,0 +1,118 @@
+{
+ "display": "Qwen3.8-27B BASE Q8_0 (llama-server+jinja, Beast GPU0)",
+ "server": "http://127.0.0.1:8087/v1/chat/completions",
+ "max_tokens": 32000,
+ "total": 63,
+ "possible": 500,
+ "pct": 12.6,
+ "results": [
+  {
+   "name": "LRU Cache Implementation",
+   "status": "FAIL",
+   "score": 17,
+   "max_score": 100,
+   "pct": 17.0,
+   "scores": {
+    "basic_correctness": 0,
+    "edge_capacity_1": 0,
+    "edge_update_lru": 0,
+    "edge_overwrite": 0,
+    "performance": 0,
+    "code_quality": 17
+   },
+   "time": 10.7,
+   "tokens": 503,
+   "tps": 47.2,
+   "error": "File \"/tmp/tmpewlq5h3j.py\", line 16\n    Need maybe handle capacity <=0? Requirements positive. Could if capacity <=0: self.capacity=0? But positive. If capacity 0, put would insert then pop? If len > 0 pop, okay but get -1. But positive.\n         ^^^^^\nSyntaxError: invalid syntax",
+   "response_len": 2050,
+   "code_len": 1530
+  },
+  {
+   "name": "Async Rate Limiter",
+   "status": "FAIL",
+   "score": 7,
+   "max_score": 100,
+   "pct": 7.0,
+   "scores": {
+    "basic_try_acquire": 0,
+    "token_refill": 0,
+    "async_acquire": 0,
+    "multi_token": 0,
+    "code_quality": 7
+   },
+   "time": 724.0,
+   "tokens": 31886,
+   "tps": 44.04,
+   "error": "Traceback (most recent call last):\n  File \"/tmp/tmp7t5ltwz5.py\", line 1, in <module>\n    if self._scheduled:\n       ^^^^\nNameError: name 'self' is not defined",
+   "response_len": 125688,
+   "code_len": 167
+  },
+  {
+   "name": "Recursive Descent Parser",
+   "status": "FAIL",
+   "score": 11,
+   "max_score": 100,
+   "pct": 11.0,
+   "scores": {
+    "basic_arithmetic": 0,
+    "operator_precedence": 0,
+    "parentheses": 0,
+    "unary_minus": 0,
+    "floating_point": 0,
+    "error_handling": 0,
+    "code_quality": 11
+   },
+   "time": 381.4,
+   "tokens": 16316,
+   "tps": 42.78,
+   "error": "File \"/tmp/tmp8uflxhgh.py\", line 88\n    Expression '1e+': if e with sign but no digits, we don't consume e, token '1', then e invalid. Good.\n                                                                                ^\nSyntaxError: unterminated string literal (detected at line 88)",
+   "response_len": 64523,
+   "code_len": 62224
+  },
+  {
+   "name": "Trie with Autocomplete",
+   "status": "FAIL",
+   "score": 14,
+   "max_score": 100,
+   "pct": 14.0,
+   "scores": {
+    "insert_search": 0,
+    "starts_with": 0,
+    "autocomplete_basic": 0,
+    "autocomplete_limit": 0,
+    "delete_basic": 0,
+    "delete_preserves_prefix": 0,
+    "code_quality": 14
+   },
+   "time": 110.6,
+   "tokens": 4792,
+   "tps": 43.31,
+   "error": "File \"/tmp/tmpzlkwtjsd.py\", line 13\n    node=root; for i,ch in enumerate(word): child=node.children[ch]; if not child.is_end and not child.children: del node.children[ch]; break? Need if break, parent may become empty? If we delete child, parent might now be empty and not end, but parent is on path; we can continue? Let's design.\n                                                                                                                                                                        ",
+   "response_len": 19743,
+   "code_len": 18131
+  },
+  {
+   "name": "Event Emitter with Typed Events",
+   "status": "FAIL",
+   "score": 14,
+   "max_score": 100,
+   "pct": 14.0,
+   "scores": {
+    "basic_on_emit": 0,
+    "multiple_listeners": 0,
+    "unsubscribe_return": 0,
+    "once": 0,
+    "off": 0,
+    "remove_all": 0,
+    "kwargs": 0,
+    "code_quality": 14
+   },
+   "time": 295.8,
+   "tokens": 12752,
+   "tps": 43.11,
+   "error": "File \"/tmp/tmpmcjubhxj.py\", line 39\n    Potential issue: off(event, callback) should remove all occurrences? Usually remove specific listener; if registered multiple times, maybe remove all? Node removes all matching? Actually EventEmitter.off removes all listeners matching event and listener. Could remove all. We'll remove all matching callback (regardless once flag). Implementation:\n                                                                                                                ",
+   "response_len": 56238,
+   "code_len": 53056
+  }
+ ]
+}

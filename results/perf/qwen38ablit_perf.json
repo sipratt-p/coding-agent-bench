@@ -1,0 +1,40 @@
+{
+ "model": "qwen38-27b-ablit",
+ "base": "http://REDACTED-TAILSCALE-HOST:11500",
+ "decode_code_edit_tok_s": 22.4,
+ "decode_prose_tok_s": 19.8,
+ "prefill": [
+  {
+   "prompt_tokens": 54010,
+   "ttft_s": 273.5,
+   "prefill_tok_s": 197.5
+  },
+  {
+   "prompt_tokens": 54010,
+   "ttft_s": 272.0,
+   "prefill_tok_s": 198.5
+  }
+ ],
+ "concurrency": [
+  {
+   "c": 1,
+   "agg_tok_s": 19.2,
+   "per_stream_tok_s": 19.2
+  },
+  {
+   "c": 2,
+   "agg_tok_s": 32.2,
+   "per_stream_tok_s": 16.1
+  },
+  {
+   "c": 4,
+   "agg_tok_s": 44.4,
+   "per_stream_tok_s": 11.1
+  },
+  {
+   "c": 8,
+   "agg_tok_s": 42.5,
+   "per_stream_tok_s": 5.3
+  }
+ ]
+}

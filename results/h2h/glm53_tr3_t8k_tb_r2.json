@@ -1,0 +1,84 @@
+{
+ "display": "GLM-5.3-Flash TR3-4bpw think8k (r2)",
+ "harness": "prime-agent",
+ "provider": "beast-glm53-tr3",
+ "model": "GLM-5.3-Flash-EXL3-4bpw",
+ "total": 359,
+ "possible": 400,
+ "pct": 89.8,
+ "results": [
+  {
+   "name": "POSIX Regex Engine (leftmost-longest)",
+   "status": "PARTIAL",
+   "score": 68,
+   "max_score": 100,
+   "scores": {
+    "basic": 15,
+    "leftmost_longest": 25,
+    "classes_anchors": 15,
+    "invalid_patterns": 0,
+    "performance": 0,
+    "code_quality": 13
+   },
+   "time": 1238.1,
+   "error": "Traceback (most recent call last):\n  File \"/tmp/tmpkvk8p_d0.py\", line 477, in <module>\n    raise AssertionError(f\"pattern {bad!r} should raise ValueError\")\nAssertionError: pattern 'a**' should raise ValueError",
+   "code_len": 13890,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Convergent Replicated Text (CRDT)",
+   "status": "PASS",
+   "score": 98,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "serializable": 5,
+    "concurrent_order": 25,
+    "out_of_order": 25,
+    "convergence_fuzz": 20,
+    "code_quality": 13
+   },
+   "time": 991.8,
+   "error": null,
+   "code_len": 9801,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Async DAG Orchestrator (cancellation semantics)",
+   "status": "PASS",
+   "score": 98,
+   "max_score": 100,
+   "scores": {
+    "basic_dag": 15,
+    "true_concurrency": 20,
+    "failure_skip": 20,
+    "timeout_cancel": 20,
+    "validation": 10,
+    "code_quality": 13
+   },
+   "time": 445.5,
+   "error": null,
+   "code_len": 6043,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Chunk-Split Streaming JSON Parser",
+   "status": "PASS",
+   "score": 95,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "char_at_a_time": 20,
+    "every_split_point": 20,
+    "random_chunkings": 10,
+    "boundaries": 10,
+    "malformed": 15,
+    "code_quality": 10
+   },
+   "time": 158.5,
+   "error": null,
+   "code_len": 16249,
+   "wrote_solution_py": true
+  }
+ ]
+}

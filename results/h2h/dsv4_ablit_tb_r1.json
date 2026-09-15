@@ -1,0 +1,84 @@
+{
+ "display": "DSV4-Flash-Ablit (Beast :8000, Prime) (r1)",
+ "harness": "prime-agent",
+ "provider": "beast-vllm",
+ "model": "DeepSeek-V4-Flash-Abliterated",
+ "total": 287,
+ "possible": 400,
+ "pct": 71.8,
+ "results": [
+  {
+   "name": "POSIX Regex Engine (leftmost-longest)",
+   "status": "PASS",
+   "score": 93,
+   "max_score": 100,
+   "scores": {
+    "basic": 15,
+    "leftmost_longest": 25,
+    "classes_anchors": 15,
+    "invalid_patterns": 10,
+    "performance": 20,
+    "code_quality": 8
+   },
+   "time": 406.8,
+   "error": null,
+   "code_len": 8119,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Convergent Replicated Text (CRDT)",
+   "status": "PASS",
+   "score": 93,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "serializable": 5,
+    "concurrent_order": 25,
+    "out_of_order": 25,
+    "convergence_fuzz": 20,
+    "code_quality": 8
+   },
+   "time": 101.2,
+   "error": null,
+   "code_len": 3798,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Async DAG Orchestrator (cancellation semantics)",
+   "status": "FAIL",
+   "score": 6,
+   "max_score": 100,
+   "scores": {
+    "basic_dag": 0,
+    "true_concurrency": 0,
+    "failure_skip": 0,
+    "timeout_cancel": 0,
+    "validation": 0,
+    "code_quality": 6
+   },
+   "time": 594.9,
+   "error": "Traceback (most recent call last):\n  File \"/tmp/tmpblmg47l8.py\", line 64, in <module>\n    assert asyncio.run(t_basic())\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/runners.py\", line 194, in run\n    return runner.run(main)\n           ^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/base_events.py\", line 687, i",
+   "code_len": 911,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Chunk-Split Streaming JSON Parser",
+   "status": "PASS",
+   "score": 95,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "char_at_a_time": 20,
+    "every_split_point": 20,
+    "random_chunkings": 10,
+    "boundaries": 10,
+    "malformed": 15,
+    "code_quality": 10
+   },
+   "time": 12.7,
+   "error": null,
+   "code_len": 16249,
+   "wrote_solution_py": true
+  }
+ ]
+}

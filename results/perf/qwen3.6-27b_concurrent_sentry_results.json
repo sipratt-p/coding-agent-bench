@@ -1,0 +1,45 @@
+{
+  "server": "http://REDACTED-LAN-HOST:8089/v1/chat/completions",
+  "model": "qwen3.6-27b",
+  "aggregate_tps": 32.14718911204583,
+  "per_agent_avg_tps": 6.486756993131612,
+  "total_wall": 494.6000082489991,
+  "total_tokens": 15900,
+  "results": [
+    {
+      "name": "LRU Cache Implementation",
+      "tokens": 3156,
+      "wall": 488.2001564559978,
+      "tps": 6.464564905409363,
+      "response_excerpt": "Here's a thinking process:\n\n1.  **Understand the Goal**: The user wants an LRU cache implementation in Python with O(1) time complexity for both `get` and `put` operations. The output should be *only* the Python code, with no explanations.\n\n2.  **Identify Key Requirements**:\n   - `LRUCache(capacity:"
+    },
+    {
+      "name": "Async Rate Limiter",
+      "tokens": 3172,
+      "wall": 490.5817956989995,
+      "tps": 6.4657938344857575,
+      "response_excerpt": "Here's a thinking process:\n\n1.  **Understand the Requirements:**\n   - Class name: `RateLimiter`\n   - Constructor: `__init__(self, rate: float, burst: int)`\n   - `rate`: tokens per second\n   - `burst`: maximum tokens (bucket capacity)\n   - `async acquire(tokens: int = 1) -> None`: Async method, waits"
+    },
+    {
+      "name": "Recursive Descent Parser",
+      "tokens": 3247,
+      "wall": 494.5991116150035,
+      "tps": 6.564913943559504,
+      "response_excerpt": "Here's a thinking process:\n\n1.  **Understand the Goal**: The user wants a Python function `evaluate(expr: str) -> float` that parses and evaluates simple mathematical expressions. It needs to support `+`, `-`, `*`, `/`, parentheses `()`, unary minus, and floating-point numbers. It must respect opera"
+    },
+    {
+      "name": "Trie with Autocomplete",
+      "tokens": 3182,
+      "wall": 491.51813799999945,
+      "tps": 6.473822571030182,
+      "response_excerpt": "Here's a thinking process:\n\n1.  **Understand the Goal**: The user wants a Python implementation of a Trie (prefix tree) with specific methods: `insert`, `search`, `starts_with`, `autocomplete`, and `delete`. The output should be only the Python code, no explanations.\n\n2.  **Analyze Requirements**:\n "
+    },
+    {
+      "name": "Event Emitter with Typed Events",
+      "tokens": 3143,
+      "wall": 486.17968645200017,
+      "tps": 6.464689711173257,
+      "response_excerpt": "Here's a thinking process:\n\n1.  **Understand the Goal**: The user wants a Python implementation of a typed event emitter class named `EventEmitter` with specific methods: `on`, `once`, `emit`, `off`, `listeners`, and `remove_all_listeners`. The output should be only the Python code.\n\n2.  **Analyze R"
+    }
+  ]
+}

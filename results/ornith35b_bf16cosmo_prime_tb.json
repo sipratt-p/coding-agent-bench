@@ -1,0 +1,48 @@
+{
+ "display": "Ornith-1.5-35B bf16 MLX via Prime harness (Cosmo oMLX, tasks 1+4)",
+ "harness": "prime-agent",
+ "provider": "cosmo-ornith-bf16",
+ "model": "ornith-35b-bf16",
+ "total": 161,
+ "possible": 200,
+ "pct": 80.5,
+ "results": [
+  {
+   "name": "POSIX Regex Engine (leftmost-longest)",
+   "status": "PARTIAL",
+   "score": 68,
+   "max_score": 100,
+   "scores": {
+    "basic": 15,
+    "leftmost_longest": 25,
+    "classes_anchors": 15,
+    "invalid_patterns": 0,
+    "performance": 0,
+    "code_quality": 13
+   },
+   "time": 3623.2,
+   "error": "Traceback (most recent call last):\n  File \"/tmp/tmpyxfno9ve.py\", line 381, in <module>\n    raise AssertionError(f\"pattern {bad!r} should raise ValueError\")\nAssertionError: pattern 'a**' should raise ValueError",
+   "code_len": 10494,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Chunk-Split Streaming JSON Parser",
+   "status": "PASS",
+   "score": 93,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "char_at_a_time": 20,
+    "every_split_point": 20,
+    "random_chunkings": 10,
+    "boundaries": 10,
+    "malformed": 15,
+    "code_quality": 8
+   },
+   "time": 3134.5,
+   "error": null,
+   "code_len": 11255,
+   "wrote_solution_py": true
+  }
+ ]
+}

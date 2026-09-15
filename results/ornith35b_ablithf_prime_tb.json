@@ -1,0 +1,84 @@
+{
+ "display": "Ornith-1.5-35B ABLITERATED-ours via Prime (Beast vLLM)",
+ "harness": "prime-agent",
+ "provider": "beast-ornith-ablit",
+ "model": "ornith-35b-ablit-hf",
+ "total": 105,
+ "possible": 400,
+ "pct": 26.2,
+ "results": [
+  {
+   "name": "POSIX Regex Engine (leftmost-longest)",
+   "status": "FAIL",
+   "score": 4,
+   "max_score": 100,
+   "scores": {
+    "basic": 0,
+    "leftmost_longest": 0,
+    "classes_anchors": 0,
+    "invalid_patterns": 0,
+    "performance": 0,
+    "code_quality": 4
+   },
+   "time": 597.9,
+   "error": "Traceback (most recent call last):\n  File \"/tmp/tmp9d3hzt6k.py\", line 10, in <module>\n    assert regex_match(\"abc\", \"xxabcxx\") == (2, 5)\n           ^^^^^^^^^^^\nNameError: name 'regex_match' is not defined",
+   "code_len": 0,
+   "wrote_solution_py": false
+  },
+  {
+   "name": "Convergent Replicated Text (CRDT)",
+   "status": "FAIL",
+   "score": 4,
+   "max_score": 100,
+   "scores": {
+    "basic": 0,
+    "serializable": 0,
+    "concurrent_order": 0,
+    "out_of_order": 0,
+    "convergence_fuzz": 0,
+    "code_quality": 4
+   },
+   "time": 551.9,
+   "error": "Traceback (most recent call last):\n  File \"/tmp/tmp2qtqaj4j.py\", line 13, in <module>\n    a = Replica(\"A\")\n        ^^^^^^^\nNameError: name 'Replica' is not defined",
+   "code_len": 0,
+   "wrote_solution_py": false
+  },
+  {
+   "name": "Async DAG Orchestrator (cancellation semantics)",
+   "status": "PASS",
+   "score": 93,
+   "max_score": 100,
+   "scores": {
+    "basic_dag": 15,
+    "true_concurrency": 20,
+    "failure_skip": 20,
+    "timeout_cancel": 20,
+    "validation": 10,
+    "code_quality": 8
+   },
+   "time": 135.1,
+   "error": null,
+   "code_len": 3270,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Chunk-Split Streaming JSON Parser",
+   "status": "FAIL",
+   "score": 4,
+   "max_score": 100,
+   "scores": {
+    "basic": 0,
+    "char_at_a_time": 0,
+    "every_split_point": 0,
+    "random_chunkings": 0,
+    "boundaries": 0,
+    "malformed": 0,
+    "code_quality": 4
+   },
+   "time": 528.7,
+   "error": "Traceback (most recent call last):\n  File \"/tmp/tmpmt1fb1r7.py\", line 31, in <module>\n    assert run_stream([src]) == EXPECT\n           ^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpmt1fb1r7.py\", line 21, in run_stream\n    p = StreamParser()\n        ^^^^^^^^^^^^\nNameError: name 'StreamParser' is not defined",
+   "code_len": 0,
+   "wrote_solution_py": false
+  }
+ ]
+}

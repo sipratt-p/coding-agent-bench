@@ -1,0 +1,127 @@
+{
+  "model": "qwen3.6-35b-a3b",
+  "display": "Qwen3.6-35B-A3B UD-Q6_K_XL (llama.cpp Metal, Sentry)",
+  "server": "http://REDACTED-LAN-HOST:8089/v1/chat/completions",
+  "precision": "Q6_K_XL",
+  "max_tokens": 12000,
+  "total_score": 458,
+  "max_score": 500,
+  "pct": 91.6,
+  "wall_clock_seconds": 481.5,
+  "avg_tokens_per_sec": 74.18,
+  "results": [
+    {
+      "name": "LRU Cache Implementation",
+      "status": "PASS",
+      "score": 97,
+      "max_score": 100,
+      "pct": 97.0,
+      "scores": {
+        "basic_correctness": 30,
+        "edge_capacity_1": 10,
+        "edge_update_lru": 15,
+        "edge_overwrite": 10,
+        "performance": 15,
+        "code_quality": 17
+      },
+      "time": 162.9,
+      "tokens": 12000,
+      "tps": 73.64,
+      "error": null,
+      "response_len": 44189,
+      "code_len": 1483,
+      "response_excerpt": "The user wants an implementation of an LRU Cache in Python.\nThe constraints are:\n1.  `get(key)` must be O(1).\n2.  `put(key, value)` must be O(1).\n3.  Must handle initialization with a capacity.\n4.  Must return -1 if key not found in `get`.\n5.  Must evict the least recently used item when capacity is reached in `put`.\n\nTo achieve O(1) for both operations, I need a data structure that allows fast lookup and fast insertion/deletion at specific positions (head/tail).\nA Hash Map (Dictionary in Python"
+    },
+    {
+      "name": "Async Rate Limiter",
+      "status": "PASS",
+      "score": 96,
+      "max_score": 100,
+      "pct": 96.0,
+      "scores": {
+        "basic_try_acquire": 25,
+        "token_refill": 20,
+        "async_acquire": 20,
+        "multi_token": 10,
+        "code_quality": 21
+      },
+      "time": 62.2,
+      "tokens": 4621,
+      "tps": 74.35,
+      "error": null,
+      "response_len": 18650,
+      "code_len": 1003,
+      "response_excerpt": "The user wants a token bucket rate limiter implemented in Python using `asyncio`.\nRequirements:\n- Class name: `RateLimiter`\n- Constructor: `RateLimiter(rate: float, burst: int)`\n- Method: `async acquire(tokens: int = 1) -> None`\n- Method: `try_acquire(tokens: int = 1) -> bool` (synchronous, not async)\n- Handle concurrent callers correctly\n\nToken bucket algorithm:\n- Tokens are added at a constant rate (`rate` tokens per second)\n- Maximum tokens is `burst`\n- `acquire` waits until enough tokens are"
+    },
+    {
+      "name": "Recursive Descent Parser",
+      "status": "PASS",
+      "score": 96,
+      "max_score": 100,
+      "pct": 96.0,
+      "scores": {
+        "basic_arithmetic": 15,
+        "operator_precedence": 20,
+        "parentheses": 15,
+        "unary_minus": 15,
+        "floating_point": 10,
+        "error_handling": 10,
+        "code_quality": 11
+      },
+      "time": 103.9,
+      "tokens": 7694,
+      "tps": 74.04,
+      "error": null,
+      "response_len": 29923,
+      "code_len": 2422,
+      "response_excerpt": "Here's a thinking process:\n\n1.  **Understand the Goal**: The user wants a Python function `evaluate(expr: str) -> float` that parses and evaluates simple mathematical expressions. It needs to support `+`, `-`, `*`, `/`, parentheses, unary minus, and floating point numbers. It must respect operator precedence (`*` and `/` before `+` and `-`). It should raise `ValueError` on invalid expressions. Output only the Python code.\n\n2.  **Key Requirements**:\n   - Operators: `+`, `-`, `*`, `/`\n   - Parenth"
+    },
+    {
+      "name": "Trie with Autocomplete",
+      "status": "PARTIAL",
+      "score": 72,
+      "max_score": 100,
+      "pct": 72.0,
+      "scores": {
+        "insert_search": 20,
+        "starts_with": 10,
+        "autocomplete_basic": 15,
+        "autocomplete_limit": 10,
+        "delete_basic": 0,
+        "delete_preserves_prefix": 0,
+        "code_quality": 17
+      },
+      "time": 70.8,
+      "tokens": 5272,
+      "tps": 74.44,
+      "error": "Traceback (most recent call last):\n  File \"/tmp/tmp0_42zz4l.py\", line 110, in <module>\n    assert t.delete(\"app\") == True\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError",
+      "response_len": 21850,
+      "code_len": 2320,
+      "response_excerpt": "The user wants a Python implementation of a Trie (prefix tree) with specific methods:\n1. `insert(word: str) -> None`\n2. `search(word: str) -> bool`\n3. `starts_with(prefix: str) -> bool`\n4. `autocomplete(prefix: str, limit: int = 5) -> list[str]`\n5. `delete(word: str) -> bool`\n\nI need to implement this efficiently. Let's design the Trie node structure first.\nEach node will have:\n- `children`: a dictionary mapping characters to child nodes\n- `is_end`: a boolean indicating if the node marks the end"
+    },
+    {
+      "name": "Event Emitter with Typed Events",
+      "status": "PASS",
+      "score": 97,
+      "max_score": 100,
+      "pct": 97.0,
+      "scores": {
+        "basic_on_emit": 15,
+        "multiple_listeners": 10,
+        "unsubscribe_return": 15,
+        "once": 15,
+        "off": 10,
+        "remove_all": 10,
+        "kwargs": 5,
+        "code_quality": 17
+      },
+      "time": 81.5,
+      "tokens": 6068,
+      "tps": 74.43,
+      "error": null,
+      "response_len": 24263,
+      "code_len": 1767,
+      "response_excerpt": "The user wants a typed event emitter in Python.\nThe class must be named `EventEmitter`.\nMethods required:\n- `on(event: str, callback: Callable) -> Callable`\n- `once(event: str, callback: Callable) -> Callable`\n- `emit(event: str, *args, **kwargs) -> None`\n- `off(event: str, callback: Callable) -> None`\n- `listeners(event: str) -> list[Callable]`\n- `remove_all_listeners(event: str = None) -> None`\n\nI need to implement this with type hints.\nI'll use `typing` module for `Callable`, `List`, `Optiona"
+    }
+  ]
+}

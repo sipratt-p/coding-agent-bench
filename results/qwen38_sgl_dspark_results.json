@@ -1,0 +1,118 @@
+{
+ "display": "Qwen3.8 FP8 via SGLang+DSpark (crowned config)",
+ "server": "http://127.0.0.1:8014/v1/chat/completions",
+ "max_tokens": null,
+ "total": 403,
+ "possible": 500,
+ "pct": 80.6,
+ "results": [
+  {
+   "name": "LRU Cache Implementation",
+   "status": "FAIL",
+   "score": 17,
+   "max_score": 100,
+   "pct": 17.0,
+   "scores": {
+    "basic_correctness": 0,
+    "edge_capacity_1": 0,
+    "edge_update_lru": 0,
+    "edge_overwrite": 0,
+    "performance": 0,
+    "code_quality": 17
+   },
+   "time": 7.9,
+   "tokens": 1182,
+   "tps": 150.49,
+   "error": "Traceback (most recent call last):\n  File \"/tmp/tmp80ffl_x0.py\", line 59, in <module>\n    cache = LRUCache(2)\n            ^^^^^^^^^^^\n  File \"/tmp/tmp80ffl_x0.py\", line 14, in __init__\n    self.head = Node()\n                ^^^^\nNameError: name 'Node' is not defined. Did you mean: 'self.Node'?",
+   "response_len": 1536,
+   "code_len": 1534
+  },
+  {
+   "name": "Async Rate Limiter",
+   "status": "PASS",
+   "score": 96,
+   "max_score": 100,
+   "pct": 96.0,
+   "scores": {
+    "basic_try_acquire": 25,
+    "token_refill": 20,
+    "async_acquire": 20,
+    "multi_token": 10,
+    "code_quality": 21
+   },
+   "time": 867.6,
+   "tokens": 35740,
+   "tps": 41.19,
+   "error": null,
+   "response_len": 2174,
+   "code_len": 2171
+  },
+  {
+   "name": "Recursive Descent Parser",
+   "status": "PASS",
+   "score": 96,
+   "max_score": 100,
+   "pct": 96.0,
+   "scores": {
+    "basic_arithmetic": 15,
+    "operator_precedence": 20,
+    "parentheses": 15,
+    "unary_minus": 15,
+    "floating_point": 10,
+    "error_handling": 10,
+    "code_quality": 11
+   },
+   "time": 1729.4,
+   "tokens": 52186,
+   "tps": 30.18,
+   "error": null,
+   "response_len": 4011,
+   "code_len": 4009
+  },
+  {
+   "name": "Trie with Autocomplete",
+   "status": "PASS",
+   "score": 97,
+   "max_score": 100,
+   "pct": 97.0,
+   "scores": {
+    "insert_search": 20,
+    "starts_with": 10,
+    "autocomplete_basic": 15,
+    "autocomplete_limit": 10,
+    "delete_basic": 15,
+    "delete_preserves_prefix": 10,
+    "code_quality": 17
+   },
+   "time": 47.4,
+   "tokens": 4264,
+   "tps": 89.88,
+   "error": null,
+   "response_len": 2145,
+   "code_len": 2143
+  },
+  {
+   "name": "Event Emitter with Typed Events",
+   "status": "PASS",
+   "score": 97,
+   "max_score": 100,
+   "pct": 97.0,
+   "scores": {
+    "basic_on_emit": 15,
+    "multiple_listeners": 10,
+    "unsubscribe_return": 15,
+    "once": 15,
+    "off": 10,
+    "remove_all": 10,
+    "kwargs": 5,
+    "code_quality": 17
+   },
+   "time": 215.1,
+   "tokens": 13917,
+   "tps": 64.69,
+   "error": null,
+   "response_len": 2914,
+   "code_len": 2912
+  }
+ ]
+}

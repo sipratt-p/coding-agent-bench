@@ -1,0 +1,37 @@
+{
+  "aggregate_tps": 171.77913081584836,
+  "per_agent_avg_tps": 49.277801974614725,
+  "total_wall": 177.0354748889804,
+  "results": [
+    {
+      "name": "LRU Cache Implementation",
+      "tokens": 7015,
+      "wall": 107.25441878009588,
+      "tps": 65.40538662329024
+    },
+    {
+      "name": "Async Rate Limiter",
+      "tokens": 5858,
+      "wall": 94.6023686430417,
+      "tps": 61.922422740850344
+    },
+    {
+      "name": "Recursive Descent Parser",
+      "tokens": 7534,
+      "wall": 121.16469389898703,
+      "tps": 62.17991829357421
+    },
+    {
+      "name": "Trie with Autocomplete",
+      "tokens": 5239,
+      "wall": 174.83439793414436,
+      "tps": 29.965524474686543
+    },
+    {
+      "name": "Event Emitter with Typed Events",
+      "tokens": 4765,
+      "wall": 177.03395499382168,
+      "tps": 26.915757740672298
+    }
+  ]
+}

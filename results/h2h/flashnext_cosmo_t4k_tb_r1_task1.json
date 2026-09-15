@@ -1,0 +1,17 @@
+{
+ "display": "Qwen3.8-Flash-Next oQ4e+MTP think4k (Cosmo) (r1)",
+ "harness": "prime-agent",
+ "provider": "cosmo-flashnext",
+ "model": "Qwen3.8-Flash-Next-oQ4e-mtp",
+ "note": "task1 scored after operator SIGTERM at 8.4 h (polish loop; 32GB hot-cache re-prefill); tasks 2-4 run separately via TB_PICK with 128GB cache",
+ "results": [
+  {
+   "name": "POSIX Regex Engine (leftmost-longest)",
+   "score": 98,
+   "max_score": 100,
+   "status": "PASS",
+   "time": 30110.6,
+   "solution": true
+  }
+ ]
+}

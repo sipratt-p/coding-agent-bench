@@ -1,0 +1,39 @@
+{
+ "display": "Ornith-1.5-35B-A3B (Beast vLLM)",
+ "server": "http://127.0.0.1:8010/v1/chat/completions",
+ "total": 79,
+ "possible": 200,
+ "results": [
+  {
+   "name": "Async DAG Orchestrator (cancellation semantics)",
+   "status": "PARTIAL",
+   "score": 68,
+   "max_score": 100,
+   "scores": {
+    "basic_dag": 15,
+    "true_concurrency": 20,
+    "failure_skip": 20,
+    "timeout_cancel": 0,
+    "validation": 0,
+    "code_quality": 13
+   },
+   "time": 622.2
+  },
+  {
+   "name": "Chunk-Split Streaming JSON Parser",
+   "status": "FAIL",
+   "score": 11,
+   "max_score": 100,
+   "scores": {
+    "basic": 0,
+    "char_at_a_time": 0,
+    "every_split_point": 0,
+    "random_chunkings": 0,
+    "boundaries": 0,
+    "malformed": 0,
+    "code_quality": 11
+   },
+   "time": 746.8
+  }
+ ]
+}

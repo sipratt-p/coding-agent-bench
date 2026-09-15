@@ -1,0 +1,84 @@
+{
+ "display": "Qwen3.8-Flash-Next-Uncensored FP8+MTP4 (Beast :8001, Prime) (r3)",
+ "harness": "prime-agent",
+ "provider": "beast-qwen38fn",
+ "model": "Qwen3.8-Flash-Next",
+ "total": 389,
+ "possible": 400,
+ "pct": 97.2,
+ "results": [
+  {
+   "name": "POSIX Regex Engine (leftmost-longest)",
+   "status": "PASS",
+   "score": 98,
+   "max_score": 100,
+   "scores": {
+    "basic": 15,
+    "leftmost_longest": 25,
+    "classes_anchors": 15,
+    "invalid_patterns": 10,
+    "performance": 20,
+    "code_quality": 13
+   },
+   "time": 1981.4,
+   "error": null,
+   "code_len": 21180,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Convergent Replicated Text (CRDT)",
+   "status": "PASS",
+   "score": 98,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "serializable": 5,
+    "concurrent_order": 25,
+    "out_of_order": 25,
+    "convergence_fuzz": 20,
+    "code_quality": 13
+   },
+   "time": 374.0,
+   "error": null,
+   "code_len": 14107,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Async DAG Orchestrator (cancellation semantics)",
+   "status": "PASS",
+   "score": 98,
+   "max_score": 100,
+   "scores": {
+    "basic_dag": 15,
+    "true_concurrency": 20,
+    "failure_skip": 20,
+    "timeout_cancel": 20,
+    "validation": 10,
+    "code_quality": 13
+   },
+   "time": 146.6,
+   "error": null,
+   "code_len": 6811,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Chunk-Split Streaming JSON Parser",
+   "status": "PASS",
+   "score": 95,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "char_at_a_time": 20,
+    "every_split_point": 20,
+    "random_chunkings": 10,
+    "boundaries": 10,
+    "malformed": 15,
+    "code_quality": 10
+   },
+   "time": 709.2,
+   "error": null,
+   "code_len": 16249,
+   "wrote_solution_py": true
+  }
+ ]
+}

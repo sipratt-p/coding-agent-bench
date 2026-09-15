@@ -1,0 +1,32 @@
+{
+ "display": "Ornith-1.5-35B Q8_0 (Cosmo llama.cpp Metal, uncapped)",
+ "server": "http://127.0.0.1:18080/v1/chat/completions",
+ "total": 0,
+ "possible": 400,
+ "results": [
+  {
+   "name": "POSIX Regex Engine (leftmost-longest)",
+   "status": "API_ERROR",
+   "score": 0,
+   "max_score": 100
+  },
+  {
+   "name": "Convergent Replicated Text (CRDT)",
+   "status": "API_ERROR",
+   "score": 0,
+   "max_score": 100
+  },
+  {
+   "name": "Async DAG Orchestrator (cancellation semantics)",
+   "status": "API_ERROR",
+   "score": 0,
+   "max_score": 100
+  },
+  {
+   "name": "Chunk-Split Streaming JSON Parser",
+   "status": "API_ERROR",
+   "score": 0,
+   "max_score": 100
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+# The coding benchmark itself (bench/run_direct.py, run_prime_tb.py, run_cc_tb.py,
+# h2h_metrics.py, bench_alert.py, make_results_table.py, tasks/*) is pure standard
+# library: Python >= 3.10 (the task prompts use `X | None` typing in their tests).
+#
+# Optional extras, only for the scripts named:
+matplotlib>=3.8        # bench/benchmark_charts.py
+numpy>=1.26            # bench/benchmark_charts.py, arena/grade.py, arena/grade2.py
+Pillow>=10             # arena/grade.py, arena/grade2.py (render checks)
+Flask>=3               # arena rounds 3-4 candidate apps (spec3.md / spec4.md)
+websocket-client>=1.7  # arena/judge4.py (headless Chrome via CDP)
+anthropic>=0.40        # arena/judge4.py (LLM craft rubric)

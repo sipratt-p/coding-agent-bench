@@ -1,0 +1,69 @@
+{
+ "display": "DeepSeek-V4-Flash-Abliterated (Beast dspark)",
+ "server": "http://localhost:8000/v1/chat/completions",
+ "total": 114,
+ "possible": 400,
+ "results": [
+  {
+   "name": "POSIX Regex Engine (leftmost-longest)",
+   "status": "FAIL",
+   "score": 5,
+   "max_score": 100,
+   "scores": {
+    "basic": 0,
+    "leftmost_longest": 0,
+    "classes_anchors": 0,
+    "invalid_patterns": 0,
+    "performance": 0,
+    "code_quality": 5
+   },
+   "time": 358.1
+  },
+  {
+   "name": "Convergent Replicated Text (CRDT)",
+   "status": "PASS",
+   "score": 96,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "serializable": 5,
+    "concurrent_order": 25,
+    "out_of_order": 25,
+    "convergence_fuzz": 20,
+    "code_quality": 11
+   },
+   "time": 25.8
+  },
+  {
+   "name": "Async DAG Orchestrator (cancellation semantics)",
+   "status": "FAIL",
+   "score": 5,
+   "max_score": 100,
+   "scores": {
+    "basic_dag": 0,
+    "true_concurrency": 0,
+    "failure_skip": 0,
+    "timeout_cancel": 0,
+    "validation": 0,
+    "code_quality": 5
+   },
+   "time": 327.8
+  },
+  {
+   "name": "Chunk-Split Streaming JSON Parser",
+   "status": "FAIL",
+   "score": 8,
+   "max_score": 100,
+   "scores": {
+    "basic": 0,
+    "char_at_a_time": 0,
+    "every_split_point": 0,
+    "random_chunkings": 0,
+    "boundaries": 0,
+    "malformed": 0,
+    "code_quality": 8
+   },
+   "time": 347.2
+  }
+ ]
+}

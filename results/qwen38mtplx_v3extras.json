@@ -1,0 +1,38 @@
+{
+ "display": "Qwen3.8 MTPLX Quality (Cosmo)",
+ "server": "http://127.0.0.1:18700/v1/chat/completions",
+ "total": 144,
+ "possible": 200,
+ "results": [
+  {
+   "name": "POSIX Regex Engine (leftmost-longest)",
+   "status": "PARTIAL",
+   "score": 51,
+   "max_score": 100,
+   "scores": {
+    "basic": 15,
+    "leftmost_longest": 25,
+    "classes_anchors": 0,
+    "invalid_patterns": 0,
+    "performance": 0,
+    "code_quality": 11
+   },
+   "time": 980.6
+  },
+  {
+   "name": "Convergent Replicated Text (CRDT)",
+   "status": "PASS",
+   "score": 93,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "serializable": 5,
+    "concurrent_order": 25,
+    "out_of_order": 25,
+    "convergence_fuzz": 20,
+    "code_quality": 8
+   },
+   "time": 458.8
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "frontend": {
+  "hierarchy": 7,
+  "typography": 7,
+  "polish": 7,
+  "states": 6,
+  "product_feel": 7
+ },
+ "backend": {
+  "structure": 8,
+  "indexing": 8,
+  "efficiency": 7,
+  "robustness": 7,
+  "readability": 7
+ },
+ "notes": "Well-structured single-file app with clear separation of parsing, indexing, scoring, and HTTP layers. The trigram index for title substring search and sorted arrays with bisect for numeric ranges show thoughtful index design. Frontend has a clean dark theme with good visual hierarchy\u2014search bar, results table, facet sidebar, and breakdown panel are well-organized. However, the breakdown state screenshot is identical to the results state (no row selected, breakdown not shown), suggesting the breakdown interaction may not be working or wasn't captured. Error state is functional with position info but the empty table still renders below it which is slightly messy. The heapq.nsmallest approach for pagination is smart but re-evaluates the full match set on every page turn with no caching. Minor issues: facet computation re-runs the full query evaluation, and the skill <= operator boundary logic uses an odd float('inf') sentinel.",
+ "ui_probe_notes": [
+  "load_event_within_6s=True",
+  "result_rows_rendered=3",
+  "error_state_visible=True"
+ ],
+ "screenshots": {
+  "results": "judge_shots/results.png",
+  "breakdown": "judge_shots/breakdown.png",
+  "error": "judge_shots/error.png"
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "frontend": {
+  "hierarchy": 6,
+  "typography": 6,
+  "polish": 6,
+  "states": 2,
+  "product_feel": 4
+ },
+ "backend": {
+  "structure": 7,
+  "indexing": 8,
+  "efficiency": 7,
+  "robustness": 6,
+  "readability": 6
+ },
+ "notes": "The backend demonstrates a well-thought-out bitset-based inverted index with caching and proper boolean query parsing, which is genuinely appropriate for 150k scale. However, the frontend is critically broken in practice: all three screenshots show identical empty states with 'Waiting for your first search...' despite a query being present in the input, meaning the search either silently fails or results never render (probe confirms only 1 result row rendered and error_state_visible=False even on the error test). The error state for malformed queries like '((skill:python' shows no visible error message, completely failing that UX requirement. The dark theme and layout structure are competent but the product is essentially non-functional as demonstrated. Score breakdown panel is identical across all states, showing no actual breakdown data. The facet sidebar never populates with data in any screenshot.",
+ "ui_probe_notes": [
+  "load_event_within_6s=True",
+  "result_rows_rendered=1",
+  "error_state_visible=False"
+ ],
+ "screenshots": {
+  "results": "judge_shots/results.png",
+  "breakdown": "judge_shots/breakdown.png",
+  "error": "judge_shots/error.png"
+ }
+}

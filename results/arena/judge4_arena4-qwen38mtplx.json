@@ -1,0 +1,27 @@
+{
+ "frontend": {
+  "hierarchy": 8,
+  "typography": 8,
+  "polish": 8,
+  "states": 8,
+  "product_feel": 8
+ },
+ "backend": {
+  "structure": 7,
+  "indexing": 8,
+  "efficiency": 7,
+  "robustness": 7,
+  "readability": 6
+ },
+ "notes": "The frontend is impressively polished for a single-file app: clear three-column layout with facets/results/breakdown, well-designed error state with caret positioning, score breakdown cards, and consistent color system with proper type hierarchy. The backend demonstrates genuine index design (inverted indexes, n-gram title index, sorted numeric arrays with bisect) and smart top-k scoring via heapq.nsmallest. However, the single-file monolith hurts readability and extensibility significantly \u2014 ~1000 lines mixing lexer, parser, engine, HTTP, and an enormous HTML string literal would be daunting for a new engineer. The LRU-style cache eviction (delete first N keys from dict) is simplistic and could evict hot entries. The _collect method has a subtle bug with `stack.append and stack.pop()` that works by accident (append returns None, so it always evaluates pop). Thread safety relies on an RLock but eval/score_set read indexes without holding it.",
+ "ui_probe_notes": [
+  "load_event_within_6s=True",
+  "result_rows_rendered=4",
+  "error_state_visible=True"
+ ],
+ "screenshots": {
+  "results": "judge_shots/results.png",
+  "breakdown": "judge_shots/breakdown.png",
+  "error": "judge_shots/error.png"
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "display": "Ornith-1.5-35B oQ8e-MTP concurrency (Cosmo oMLX :11500)",
+ "results": [
+  {
+   "c": 1,
+   "agg_tok_s": 72.5,
+   "per_stream_tok_s": 72.5,
+   "wall_s": 3.5
+  },
+  {
+   "c": 2,
+   "agg_tok_s": 130.4,
+   "per_stream_tok_s": 65.2,
+   "wall_s": 3.9
+  },
+  {
+   "c": 4,
+   "agg_tok_s": 197.9,
+   "per_stream_tok_s": 49.5,
+   "wall_s": 5.2
+  },
+  {
+   "c": 8,
+   "agg_tok_s": 276.0,
+   "per_stream_tok_s": 34.5,
+   "wall_s": 7.4
+  },
+  {
+   "c": 16,
+   "agg_tok_s": 278.0,
+   "per_stream_tok_s": 17.4,
+   "wall_s": 14.7
+  }
+ ]
+}

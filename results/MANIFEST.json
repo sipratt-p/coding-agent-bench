@@ -1,0 +1,398 @@
+{
+ "arena/grade4_arena4-qwen38mtplx.txt": {
+  "date": "2026-08-16",
+  "source_basename": "harness-bench/arena4-qwen38mtplx/grade4_results.txt"
+ },
+ "arena/judge4_arena4-cc-drowzeys.json": {
+  "date": "2026-08-16",
+  "source_basename": "harness-bench/arena4-cc-drowzeys/judge4_results.json"
+ },
+ "arena/judge4_arena4-dsh-drowzeys.json": {
+  "date": "2026-08-16",
+  "source_basename": "harness-bench/arena4-dsh-drowzeys/judge4_results.json"
+ },
+ "arena/judge4_arena4-openclaw-drowzeys.json": {
+  "date": "2026-08-16",
+  "source_basename": "harness-bench/arena4-openclaw-drowzeys/judge4_results.json"
+ },
+ "arena/judge4_arena4-qwen38mtplx.json": {
+  "date": "2026-08-16",
+  "source_basename": "harness-bench/arena4-qwen38mtplx/judge4_results.json"
+ },
+ "arena/judge4_arena4-ref.json": {
+  "date": "2026-08-15",
+  "source_basename": "harness-bench/arena4-ref/judge4_results.json"
+ },
+ "cosmo_coding_benchmark_v2_results.json": {
+  "date": "2026-04-20",
+  "source_basename": "cosmo_results/coding_benchmark_v2_results.json"
+ },
+ "drowzeys_api_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "drowzeys_api_results.json"
+ },
+ "drowzeys_openclaw_latest_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "drowzeys_openclaw_latest_results.json"
+ },
+ "drowzeys_openclaw_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "drowzeys_openclaw_results.json"
+ },
+ "drowzeys_prime_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "drowzeys_prime_results.json"
+ },
+ "ds4_api_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "ds4_api_results.json"
+ },
+ "ds4_api_uncapped_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "ds4_api_uncapped_results.json"
+ },
+ "ds4_cc_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "ds4_cc_results.json"
+ },
+ "ds4_dsh_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "ds4_dsh_results.json"
+ },
+ "ds4_openclaw_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "ds4_openclaw_results.json"
+ },
+ "ds4_prime_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "ds4_prime_results.json"
+ },
+ "dsv4ablit_prime_tb.json": {
+  "date": "2026-08-19",
+  "source_basename": "dsv4ablit_prime_tb.json"
+ },
+ "dsv4ablit_tiebreakers.json": {
+  "date": "2026-08-19",
+  "source_basename": "dsv4ablit_tiebreakers.json"
+ },
+ "dsv4ablit_tiebreakers_240k.json": {
+  "date": "2026-08-19",
+  "source_basename": "dsv4ablit_tiebreakers_240k.json"
+ },
+ "glm53mlx6bit_think32k_prime_tb.json": {
+  "date": "2026-08-27",
+  "source_basename": "glm53mlx6bit_think32k_prime_tb.json"
+ },
+ "h2h/dsv4_ablit_tb_r1.json": {
+  "date": "2026-08-27",
+  "source_basename": "dsv4_ablit_tb_r1.json"
+ },
+ "h2h/dsv4_ablit_tb_r2.json": {
+  "date": "2026-08-27",
+  "source_basename": "dsv4_ablit_tb_r2.json"
+ },
+ "h2h/dsv4_ablit_tb_r3.json": {
+  "date": "2026-08-27",
+  "source_basename": "dsv4_ablit_tb_r3.json"
+ },
+ "h2h/flashnext_cosmo_t4k_tb_r1_task1.json": {
+  "date": "2026-08-28",
+  "source_basename": "flashnext_cosmo_t4k_tb_r1_task1.json"
+ },
+ "h2h/glm53_tr3_t8k_tb_r1.json": {
+  "date": "2026-08-27",
+  "source_basename": "glm53_tr3_t8k_tb_r1.json"
+ },
+ "h2h/glm53_tr3_t8k_tb_r2.json": {
+  "date": "2026-08-28",
+  "source_basename": "glm53_tr3_t8k_tb_r2.json"
+ },
+ "h2h/glm53_tr3_t8k_tb_r3.json": {
+  "date": "2026-08-28",
+  "source_basename": "glm53_tr3_t8k_tb_r3.json"
+ },
+ "h2h/glm53_tr3_trial_t1.json": {
+  "date": "2026-08-27",
+  "source_basename": "glm53_tr3_trial_t1.json"
+ },
+ "h2h/qwenfn_ablit_nvfp4_1gpu_tb_r1.json": {
+  "date": "2026-09-03",
+  "source_basename": "qwenfn_ablit_nvfp4_1gpu_tb_r1.json"
+ },
+ "h2h/qwenfn_ablit_nvfp4_1gpu_tb_r2.json": {
+  "date": "2026-09-03",
+  "source_basename": "qwenfn_ablit_nvfp4_1gpu_tb_r2.json"
+ },
+ "h2h/qwenfn_ablit_nvfp4_1gpu_tb_r3.json": {
+  "date": "2026-09-03",
+  "source_basename": "qwenfn_ablit_nvfp4_1gpu_tb_r3.json"
+ },
+ "h2h/qwenfn_uncens_mtp4_tb_r1.json": {
+  "date": "2026-08-27",
+  "source_basename": "qwenfn_uncens_mtp4_tb_r1.json"
+ },
+ "h2h/qwenfn_uncens_mtp4_tb_r2.json": {
+  "date": "2026-08-27",
+  "source_basename": "qwenfn_uncens_mtp4_tb_r2.json"
+ },
+ "h2h/qwenfn_uncens_mtp4_tb_r3.json": {
+  "date": "2026-08-27",
+  "source_basename": "qwenfn_uncens_mtp4_tb_r3.json"
+ },
+ "official_api_results.json": {
+  "date": "2026-08-16",
+  "source_basename": "official_api_results.json"
+ },
+ "official_openclaw_results.json": {
+  "date": "2026-08-16",
+  "source_basename": "official_openclaw_results.json"
+ },
+ "official_prime_results.json": {
+  "date": "2026-08-16",
+  "source_basename": "official_prime_results.json"
+ },
+ "opus46_bench_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "opus46_bench_results.json"
+ },
+ "ornith35b_ablit_prime_tb.json": {
+  "date": "2026-08-21",
+  "source_basename": "ornith35b_ablit_prime_tb.json"
+ },
+ "ornith35b_ablithf_prime_tb.json": {
+  "date": "2026-08-20",
+  "source_basename": "ornith35b_ablithf_prime_tb.json"
+ },
+ "ornith35b_ablithf_v2.json": {
+  "date": "2026-08-20",
+  "source_basename": "ornith35b_ablithf_v2.json"
+ },
+ "ornith35b_ablitours_v2.json": {
+  "date": "2026-08-20",
+  "source_basename": "ornith35b_ablitours_v2.json"
+ },
+ "ornith35b_ablitv3_v2.json": {
+  "date": "2026-08-20",
+  "source_basename": "ornith35b_ablitv3_v2.json"
+ },
+ "ornith35b_api_results.json": {
+  "date": "2026-08-19",
+  "source_basename": "ornith35b_api_results.json"
+ },
+ "ornith35b_bf16_v2.json": {
+  "date": "2026-08-20",
+  "source_basename": "ornith35b_bf16_v2.json"
+ },
+ "ornith35b_bf16cosmo_prime_tb.json": {
+  "date": "2026-08-20",
+  "source_basename": "ornith35b_bf16cosmo_prime_tb.json"
+ },
+ "ornith35b_cosmo_results.json": {
+  "date": "2026-08-19",
+  "source_basename": "ornith35b_cosmo_results.json"
+ },
+ "ornith35b_cosmo_tb.json": {
+  "date": "2026-08-19",
+  "source_basename": "ornith35b_cosmo_tb.json"
+ },
+ "ornith35b_omlx_prime_tb.json": {
+  "date": "2026-08-19",
+  "source_basename": "ornith35b_omlx_prime_tb.json"
+ },
+ "ornith35b_omlx_tb.json": {
+  "date": "2026-08-19",
+  "source_basename": "ornith35b_omlx_tb.json"
+ },
+ "ornith35b_prime_tb.json": {
+  "date": "2026-08-19",
+  "source_basename": "ornith35b_prime_tb.json"
+ },
+ "ornith35b_v3extras.json": {
+  "date": "2026-08-19",
+  "source_basename": "ornith35b_v3extras.json"
+ },
+ "ornith35b_v4extras.json": {
+  "date": "2026-08-19",
+  "source_basename": "ornith35b_v4extras.json"
+ },
+ "ornith397b_cosmo_results.json": {
+  "date": "2026-08-19",
+  "source_basename": "ornith397b_cosmo_results.json"
+ },
+ "ornith_ablit_s040_crdt.json": {
+  "date": "2026-08-20",
+  "source_basename": "ornith_ablit_s040_crdt.json"
+ },
+ "ornith_ablit_s060_crdt.json": {
+  "date": "2026-08-20",
+  "source_basename": "ornith_ablit_s060_crdt.json"
+ },
+ "perf/drowzeys_perf_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "drowzeys_perf_results.json"
+ },
+ "perf/ds4_perf_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "ds4_perf_results.json"
+ },
+ "perf/official_perf_results.json": {
+  "date": "2026-08-16",
+  "source_basename": "official_perf_results.json"
+ },
+ "perf/ornith35b_ablit_perf.json": {
+  "date": "2026-08-20",
+  "source_basename": "ornith35b_ablit_perf.json"
+ },
+ "perf/ornith35b_bf16_perf.json": {
+  "date": "2026-08-20",
+  "source_basename": "ornith35b_bf16_perf.json"
+ },
+ "perf/ornith35b_omlx_concurrency.json": {
+  "date": "2026-08-19",
+  "source_basename": "ornith35b_omlx_concurrency.json"
+ },
+ "perf/qwen3-coder-next-a3b_concurrent_sentry_results.json": {
+  "date": "2026-04-26",
+  "source_basename": "qwen3-coder-next-a3b_concurrent_sentry_results.json"
+ },
+ "perf/qwen3.6-27b_concurrent_sentry_results.json": {
+  "date": "2026-04-26",
+  "source_basename": "qwen3.6-27b_concurrent_sentry_results.json"
+ },
+ "perf/qwen3.6-35b-a3b_concurrent_sentry_results.json": {
+  "date": "2026-04-26",
+  "source_basename": "qwen3.6-35b-a3b_concurrent_sentry_results.json"
+ },
+ "perf/qwen3.6_27b_concurrent_results.json": {
+  "date": "2026-04-22",
+  "source_basename": "qwen3.6_27b_concurrent_results.json"
+ },
+ "perf/qwen3.6_27b_concurrent_v2_results.json": {
+  "date": "2026-04-22",
+  "source_basename": "qwen3.6_27b_concurrent_v2_results.json"
+ },
+ "perf/qwen38ablit_perf.json": {
+  "date": "2026-08-19",
+  "source_basename": "qwen38ablit_perf.json"
+ },
+ "q38flashnext_prime_tb.json": {
+  "date": "2026-08-26",
+  "source_basename": "q38flashnext_prime_tb.json"
+ },
+ "q38flashnext_v2.json": {
+  "date": "2026-08-26",
+  "source_basename": "q38flashnext_v2.json"
+ },
+ "qwen3-coder-next-a3b_quality_sentry_results.json": {
+  "date": "2026-04-26",
+  "source_basename": "qwen3-coder-next-a3b_quality_sentry_results.json"
+ },
+ "qwen3-coder-next-a3b_streaming_quality_sentry_results.json": {
+  "date": "2026-04-26",
+  "source_basename": "qwen3-coder-next-a3b_streaming_quality_sentry_results.json"
+ },
+ "qwen3.6-27b_streaming_quality_sentry_results.json": {
+  "date": "2026-04-26",
+  "source_basename": "qwen3.6-27b_streaming_quality_sentry_results.json"
+ },
+ "qwen3.6-35b-a3b_quality_sentry_results.json": {
+  "date": "2026-04-26",
+  "source_basename": "qwen3.6-35b-a3b_quality_sentry_results.json"
+ },
+ "qwen3.6-35b-a3b_streaming_quality_sentry_results.json": {
+  "date": "2026-04-26",
+  "source_basename": "qwen3.6-35b-a3b_streaming_quality_sentry_results.json"
+ },
+ "qwen3.6_27b_4bit_results.json": {
+  "date": "2026-04-22",
+  "source_basename": "qwen3.6_27b_4bit_results.json"
+ },
+ "qwen3.6_27b_bf16_beast_results.json": {
+  "date": "2026-04-22",
+  "source_basename": "qwen3.6_27b_bf16_beast_results.json"
+ },
+ "qwen3.6_27b_bf16_results.json": {
+  "date": "2026-04-22",
+  "source_basename": "qwen3.6_27b_bf16_results.json"
+ },
+ "qwen3.6_27b_bf16_spec_beast_results.json": {
+  "date": "2026-04-22",
+  "source_basename": "qwen3.6_27b_bf16_spec_beast_results.json"
+ },
+ "qwen3.6_27b_fp8_beast_results.json": {
+  "date": "2026-04-22",
+  "source_basename": "qwen3.6_27b_fp8_beast_results.json"
+ },
+ "qwen3.6_27b_q6kxl_cosmo_results.json": {
+  "date": "2026-04-22",
+  "source_basename": "qwen3.6_27b_q6kxl_cosmo_results.json"
+ },
+ "qwen38_ablit_q8_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "qwen38_ablit_q8_results.json"
+ },
+ "qwen38_base_q8_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "qwen38_base_q8_results.json"
+ },
+ "qwen38_fp8_eager_results.json": {
+  "date": "2026-08-16",
+  "source_basename": "qwen38_fp8_eager_results.json"
+ },
+ "qwen38_fp8_final_results.json": {
+  "date": "2026-08-16",
+  "source_basename": "qwen38_fp8_final_results.json"
+ },
+ "qwen38_heretic_results.json": {
+  "date": "2026-08-16",
+  "source_basename": "qwen38_heretic_results.json"
+ },
+ "qwen38_mtplx_low_control.json": {
+  "date": "2026-08-17",
+  "source_basename": "qwen38_mtplx_low_control.json"
+ },
+ "qwen38_mtplx_quality_results.json": {
+  "date": "2026-08-15",
+  "source_basename": "qwen38_mtplx_quality_results.json"
+ },
+ "qwen38_mtplx_speed_ablit_results.json": {
+  "date": "2026-08-16",
+  "source_basename": "qwen38_mtplx_speed_ablit_results.json"
+ },
+ "qwen38_mtplx_speed_control_results.json": {
+  "date": "2026-08-16",
+  "source_basename": "qwen38_mtplx_speed_control_results.json"
+ },
+ "qwen38_nvfp4_results.json": {
+  "date": "2026-08-16",
+  "source_basename": "qwen38_nvfp4_results.json"
+ },
+ "qwen38_sgl_dspark_results.json": {
+  "date": "2026-08-16",
+  "source_basename": "qwen38_sgl_dspark_results.json"
+ },
+ "qwen38ablit_cc_tb.json": {
+  "date": "2026-08-20",
+  "source_basename": "qwen38ablit_cc_tb.json"
+ },
+ "qwen38ablit_prime_tb.json": {
+  "date": "2026-08-20",
+  "source_basename": "qwen38ablit_prime_tb.json"
+ },
+ "qwen38mtplx_v3extras.json": {
+  "date": "2026-08-19",
+  "source_basename": "qwen38mtplx_v3extras.json"
+ },
+ "uncens_mtp4_v2.json": {
+  "date": "2026-08-26",
+  "source_basename": "uncens_mtp4_v2.json"
+ },
+ "uncens_mtp4_v2_rep2.json": {
+  "date": "2026-08-26",
+  "source_basename": "uncens_mtp4_v2_rep2.json"
+ },
+ "uncens_nomtp_v2.json": {
+  "date": "2026-08-26",
+  "source_basename": "uncens_nomtp_v2.json"
+ }
+}

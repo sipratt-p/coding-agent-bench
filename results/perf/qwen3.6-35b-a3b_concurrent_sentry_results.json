@@ -1,0 +1,45 @@
+{
+  "server": "http://REDACTED-LAN-HOST:8089/v1/chat/completions",
+  "model": "qwen3.6-35b-a3b",
+  "aggregate_tps": 145.92153503740005,
+  "per_agent_avg_tps": 29.458178598047773,
+  "total_wall": 109.38755541400315,
+  "total_tokens": 15962,
+  "results": [
+    {
+      "name": "LRU Cache Implementation",
+      "tokens": 3218,
+      "wall": 109.00536536599975,
+      "tps": 29.521551407829126,
+      "response_excerpt": "The user wants an implementation of an LRU Cache in Python.\nThe constraints are:\n1.  `get(key)` must be O(1).\n2.  `put(key, value)` must be O(1).\n3.  Must handle initialization with a capacity.\n4.  Must return -1 if key not found in `get`.\n5.  Must evict the least recently used item when capacity is"
+    },
+    {
+      "name": "Async Rate Limiter",
+      "tokens": 3172,
+      "wall": 108.14161141300428,
+      "tps": 29.331936462432164,
+      "response_excerpt": "The user wants a token bucket rate limiter implemented in Python using `asyncio`.\nRequirements:\n- Class name: `RateLimiter`\n- Constructor: `RateLimiter(rate: float, burst: int)`\n- Method: `async acquire(tokens: int = 1) -> None`\n- Method: `try_acquire(tokens: int = 1) -> bool` (synchronous, not asyn"
+    },
+    {
+      "name": "Recursive Descent Parser",
+      "tokens": 3247,
+      "wall": 109.38655737700174,
+      "tps": 29.68375182672329,
+      "response_excerpt": "Here's a thinking process:\n\n1.  **Understand the Goal**: The user wants a Python function `evaluate(expr: str) -> float` that parses and evaluates simple mathematical expressions. It needs to support `+`, `-`, `*`, `/`, parentheses, unary minus, and floating point numbers. It must respect operator p"
+    },
+    {
+      "name": "Trie with Autocomplete",
+      "tokens": 3182,
+      "wall": 108.34178516599786,
+      "tps": 29.370047730394308,
+      "response_excerpt": "The user wants a Python implementation of a Trie (prefix tree) with specific methods:\n1. `insert(word: str) -> None`\n2. `search(word: str) -> bool`\n3. `starts_with(prefix: str) -> bool`\n4. `autocomplete(prefix: str, limit: int = 5) -> list[str]`\n5. `delete(word: str) -> bool`\n\nI need to implement th"
+    },
+    {
+      "name": "Event Emitter with Typed Events",
+      "tokens": 3143,
+      "wall": 106.96452466300252,
+      "tps": 29.38360556285996,
+      "response_excerpt": "The user wants a typed event emitter in Python.\nThe class must be named `EventEmitter`.\nMethods required:\n- `on(event: str, callback: Callable) -> Callable`\n- `once(event: str, callback: Callable) -> Callable`\n- `emit(event: str, *args, **kwargs) -> None`\n- `off(event: str, callback: Callable) -> No"
+    }
+  ]
+}

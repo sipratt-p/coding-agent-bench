@@ -1,0 +1,84 @@
+{
+ "display": "DSV4-Flash-Ablit (Beast :8000, Prime) (r2)",
+ "harness": "prime-agent",
+ "provider": "beast-vllm",
+ "model": "DeepSeek-V4-Flash-Abliterated",
+ "total": 197,
+ "possible": 400,
+ "pct": 49.2,
+ "results": [
+  {
+   "name": "POSIX Regex Engine (leftmost-longest)",
+   "status": "FAIL",
+   "score": 4,
+   "max_score": 100,
+   "scores": {
+    "basic": 0,
+    "leftmost_longest": 0,
+    "classes_anchors": 0,
+    "invalid_patterns": 0,
+    "performance": 0,
+    "code_quality": 4
+   },
+   "time": 3252.6,
+   "error": "Traceback (most recent call last):\n  File \"/tmp/tmp2lweofp1.py\", line 10, in <module>\n    assert regex_match(\"abc\", \"xxabcxx\") == (2, 5)\n           ^^^^^^^^^^^\nNameError: name 'regex_match' is not defined",
+   "code_len": 0,
+   "wrote_solution_py": false
+  },
+  {
+   "name": "Convergent Replicated Text (CRDT)",
+   "status": "PASS",
+   "score": 96,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "serializable": 5,
+    "concurrent_order": 25,
+    "out_of_order": 25,
+    "convergence_fuzz": 20,
+    "code_quality": 11
+   },
+   "time": 186.4,
+   "error": null,
+   "code_len": 3716,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Async DAG Orchestrator (cancellation semantics)",
+   "status": "PASS",
+   "score": 93,
+   "max_score": 100,
+   "scores": {
+    "basic_dag": 15,
+    "true_concurrency": 20,
+    "failure_skip": 20,
+    "timeout_cancel": 20,
+    "validation": 10,
+    "code_quality": 8
+   },
+   "time": 38.4,
+   "error": null,
+   "code_len": 3896,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Chunk-Split Streaming JSON Parser",
+   "status": "FAIL",
+   "score": 4,
+   "max_score": 100,
+   "scores": {
+    "basic": 0,
+    "char_at_a_time": 0,
+    "every_split_point": 0,
+    "random_chunkings": 0,
+    "boundaries": 0,
+    "malformed": 0,
+    "code_quality": 4
+   },
+   "time": 34.3,
+   "error": "File \"/tmp/tmp2uu1m757.py\", line 1\n    ping 8.8.8.8\n         ^^^\nSyntaxError: invalid syntax",
+   "code_len": 233,
+   "wrote_solution_py": false
+  }
+ ]
+}

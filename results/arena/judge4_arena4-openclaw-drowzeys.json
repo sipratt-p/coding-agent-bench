@@ -1,0 +1,27 @@
+{
+ "frontend": {
+  "hierarchy": 7,
+  "typography": 6,
+  "polish": 7,
+  "states": 6,
+  "product_feel": 7
+ },
+ "backend": {
+  "structure": 7,
+  "indexing": 7,
+  "efficiency": 6,
+  "robustness": 7,
+  "readability": 7
+ },
+ "notes": "The dark UI is well-composed with clear visual hierarchy: search bar \u2192 facets sidebar + results table. The score breakdown drawer is a thoughtful detail that adds product value. However, the error state screenshot shows stale facets and a stale breakdown panel persisting from the previous query, which is a noticeable UX bug \u2014 the panel should clear or hide when a new query yields zero results. The backend has a solid custom parser/AST with inverted indexes and posting-list intersection, though gen_term does a linear title scan per unique term (cached, but O(n) on first call at 150k scale). The single-file monolith is readable but would benefit from module separation. Input validation is decent with a global error handler that avoids leaking tracebacks.",
+ "ui_probe_notes": [
+  "load_event_within_6s=True",
+  "result_rows_rendered=4",
+  "error_state_visible=False"
+ ],
+ "screenshots": {
+  "results": "judge_shots/results.png",
+  "breakdown": "judge_shots/breakdown.png",
+  "error": "judge_shots/error.png"
+ }
+}

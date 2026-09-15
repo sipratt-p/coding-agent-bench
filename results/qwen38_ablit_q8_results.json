@@ -1,0 +1,118 @@
+{
+ "display": "Qwen3.8-27B ABLITERATED Q8_0 (llama-server, Beast GPU0)",
+ "server": "http://127.0.0.1:8087/v1/chat/completions",
+ "max_tokens": 32000,
+ "total": 62,
+ "possible": 500,
+ "pct": 12.4,
+ "results": [
+  {
+   "name": "LRU Cache Implementation",
+   "status": "FAIL",
+   "score": 14,
+   "max_score": 100,
+   "pct": 14.0,
+   "scores": {
+    "basic_correctness": 0,
+    "edge_capacity_1": 0,
+    "edge_update_lru": 0,
+    "edge_overwrite": 0,
+    "performance": 0,
+    "code_quality": 14
+   },
+   "time": 62.3,
+   "tokens": 2890,
+   "tps": 46.37,
+   "error": "File \"/tmp/tmpjmslxm0k.py\", line 53\n    - `LRUCache(capacity: int)` \u2014 initialize with positive capacity\n                                ^\nSyntaxError: invalid character '\u2014' (U+2014)",
+   "response_len": 11674,
+   "code_len": 10983
+  },
+  {
+   "name": "Async Rate Limiter",
+   "status": "FAIL",
+   "score": 7,
+   "max_score": 100,
+   "pct": 7.0,
+   "scores": {
+    "basic_try_acquire": 0,
+    "token_refill": 0,
+    "async_acquire": 0,
+    "multi_token": 0,
+    "code_quality": 7
+   },
+   "time": 523.7,
+   "tokens": 23432,
+   "tps": 44.74,
+   "error": "File \"/tmp/tmpwp1k9g3p.py\", line 1\n    if tokens <=0: return True\n                   ^^^^^^^^^^^\nSyntaxError: 'return' outside function",
+   "response_len": 99668,
+   "code_len": 69
+  },
+  {
+   "name": "Recursive Descent Parser",
+   "status": "FAIL",
+   "score": 13,
+   "max_score": 100,
+   "pct": 13.0,
+   "scores": {
+    "basic_arithmetic": 0,
+    "operator_precedence": 0,
+    "parentheses": 0,
+    "unary_minus": 0,
+    "floating_point": 0,
+    "error_handling": 0,
+    "code_quality": 13
+   },
+   "time": 713.8,
+   "tokens": 32000,
+   "tps": 44.83,
+   "error": "File \"/tmp/tmpp84fzepm.py\", line 7\n    def parse_factor(): if peek == '-': next; return -parse_factor() (unary). if peek == '+': next; return parse_factor() maybe support unary plus? User only unary minus, but can support plus? Could be okay. But if not, invalid. Supporting unary plus harmless? Might accept expressions not specified. But okay? Better only unary minus? Could support unary plus as convenience. But strict? It says support unary minus. Not forbid plus. But invalid expressions should",
+   "response_len": 40381,
+   "code_len": 38519
+  },
+  {
+   "name": "Trie with Autocomplete",
+   "status": "FAIL",
+   "score": 14,
+   "max_score": 100,
+   "pct": 14.0,
+   "scores": {
+    "insert_search": 0,
+    "starts_with": 0,
+    "autocomplete_basic": 0,
+    "autocomplete_limit": 0,
+    "delete_basic": 0,
+    "delete_preserves_prefix": 0,
+    "code_quality": 14
+   },
+   "time": 255.5,
+   "tokens": 11664,
+   "tps": 45.64,
+   "error": "File \"/tmp/tmp5b2bew0j.py\", line 83\n    Potential hidden tests: They may instantiate Trie, insert, search, starts_with, autocomplete, delete. Need method names exact. Class name? User didn't specify class name. Usually Trie. Use class Trie.\n                                                                                                                                                        ^\nSyntaxError: unterminated string literal (detected at line 83)",
+   "response_len": 48716,
+   "code_len": 46666
+  },
+  {
+   "name": "Event Emitter with Typed Events",
+   "status": "FAIL",
+   "score": 14,
+   "max_score": 100,
+   "pct": 14.0,
+   "scores": {
+    "basic_on_emit": 0,
+    "multiple_listeners": 0,
+    "unsubscribe_return": 0,
+    "once": 0,
+    "off": 0,
+    "remove_all": 0,
+    "kwargs": 0,
+    "code_quality": 14
+   },
+   "time": 474.1,
+   "tokens": 21679,
+   "tps": 45.73,
+   "error": "File \"/tmp/tmpjq7vcow_.py\", line 50\n    But setting wrapper._original = callback may cause issues if callback is not hashable? Attribute okay. But if callback is a callable object that doesn't allow attribute? wrapper is our function, can set. Need inside once:\n                                                                                                                                                          ^\nSyntaxError: unterminated string literal (detected at line 50)",
+   "response_len": 98436,
+   "code_len": 94185
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "display": "Ornith-1.5-35B oQ8e-MTP (Cosmo oMLX, uncapped)",
+ "server": "http://REDACTED-TAILSCALE-HOST:11500/v1/chat/completions",
+ "total": 121,
+ "possible": 400,
+ "results": [
+  {
+   "name": "POSIX Regex Engine (leftmost-longest)",
+   "status": "FAIL",
+   "score": 4,
+   "max_score": 100,
+   "scores": {
+    "basic": 0,
+    "leftmost_longest": 0,
+    "classes_anchors": 0,
+    "invalid_patterns": 0,
+    "performance": 0,
+    "code_quality": 4
+   },
+   "time": 644.7,
+   "tokens": 32768,
+   "tok_s": 50.8
+  },
+  {
+   "name": "Convergent Replicated Text (CRDT)",
+   "status": "FAIL",
+   "score": 11,
+   "max_score": 100,
+   "scores": {
+    "basic": 0,
+    "serializable": 0,
+    "concurrent_order": 0,
+    "out_of_order": 0,
+    "convergence_fuzz": 0,
+    "code_quality": 11
+   },
+   "time": 939.4,
+   "tokens": 32768,
+   "tok_s": 34.9
+  },
+  {
+   "name": "Async DAG Orchestrator (cancellation semantics)",
+   "status": "PASS",
+   "score": 98,
+   "max_score": 100,
+   "scores": {
+    "basic_dag": 15,
+    "true_concurrency": 20,
+    "failure_skip": 20,
+    "timeout_cancel": 20,
+    "validation": 10,
+    "code_quality": 13
+   },
+   "time": 666.4,
+   "tokens": 28488,
+   "tok_s": 42.7
+  },
+  {
+   "name": "Chunk-Split Streaming JSON Parser",
+   "status": "FAIL",
+   "score": 8,
+   "max_score": 100,
+   "scores": {
+    "basic": 0,
+    "char_at_a_time": 0,
+    "every_split_point": 0,
+    "random_chunkings": 0,
+    "boundaries": 0,
+    "malformed": 0,
+    "code_quality": 8
+   },
+   "time": 920.6,
+   "tokens": 32768,
+   "tok_s": 35.6
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "display": "DSV4-Flash-Abliterated via Prime harness (tiebreakers)",
+ "harness": "prime-agent",
+ "provider": "beast-vllm",
+ "model": "DeepSeek-V4-Flash-Abliterated",
+ "total": 304,
+ "possible": 400,
+ "pct": 76.0,
+ "results": [
+  {
+   "name": "POSIX Regex Engine (leftmost-longest)",
+   "status": "PASS",
+   "score": 93,
+   "max_score": 100,
+   "scores": {
+    "basic": 15,
+    "leftmost_longest": 25,
+    "classes_anchors": 15,
+    "invalid_patterns": 10,
+    "performance": 20,
+    "code_quality": 8
+   },
+   "time": 602.0,
+   "error": null,
+   "code_len": 8177,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Convergent Replicated Text (CRDT)",
+   "status": "PARTIAL",
+   "score": 23,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "serializable": 5,
+    "concurrent_order": 0,
+    "out_of_order": 0,
+    "convergence_fuzz": 0,
+    "code_quality": 8
+   },
+   "time": 161.1,
+   "error": "Traceback (most recent call last):\n  File \"/tmp/tmpgekc_bj6.py\", line 163, in <module>\n    assert a.text() == \"xba\", f\"concurrent order rule: expected 'xba', got {a.text()!r}\"\n           ^^^^^^^^^^^^^^^^^\nAssertionError: concurrent order rule: expected 'xba', got 'xab'",
+   "code_len": 3777,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Async DAG Orchestrator (cancellation semantics)",
+   "status": "PASS",
+   "score": 95,
+   "max_score": 100,
+   "scores": {
+    "basic_dag": 15,
+    "true_concurrency": 20,
+    "failure_skip": 20,
+    "timeout_cancel": 20,
+    "validation": 10,
+    "code_quality": 10
+   },
+   "time": 58.4,
+   "error": null,
+   "code_len": 2440,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Chunk-Split Streaming JSON Parser",
+   "status": "PASS",
+   "score": 93,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "char_at_a_time": 20,
+    "every_split_point": 20,
+    "random_chunkings": 10,
+    "boundaries": 10,
+    "malformed": 15,
+    "code_quality": 8
+   },
+   "time": 209.1,
+   "error": null,
+   "code_len": 7125,
+   "wrote_solution_py": true
+  }
+ ]
+}

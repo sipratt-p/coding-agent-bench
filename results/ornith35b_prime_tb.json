@@ -1,0 +1,84 @@
+{
+ "display": "Ornith-1.5-35B-A3B via Prime harness (tiebreakers)",
+ "harness": "prime-agent",
+ "provider": "beast-ornith",
+ "model": "ornith-35b-a3b",
+ "total": 297,
+ "possible": 400,
+ "pct": 74.2,
+ "results": [
+  {
+   "name": "POSIX Regex Engine (leftmost-longest)",
+   "status": "PASS",
+   "score": 93,
+   "max_score": 100,
+   "scores": {
+    "basic": 15,
+    "leftmost_longest": 25,
+    "classes_anchors": 15,
+    "invalid_patterns": 10,
+    "performance": 20,
+    "code_quality": 8
+   },
+   "time": 424.6,
+   "error": null,
+   "code_len": 8333,
+   "wrote_solution_py": false
+  },
+  {
+   "name": "Convergent Replicated Text (CRDT)",
+   "status": "PASS",
+   "score": 98,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "serializable": 5,
+    "concurrent_order": 25,
+    "out_of_order": 25,
+    "convergence_fuzz": 20,
+    "code_quality": 13
+   },
+   "time": 165.4,
+   "error": null,
+   "code_len": 5577,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Async DAG Orchestrator (cancellation semantics)",
+   "status": "PASS",
+   "score": 98,
+   "max_score": 100,
+   "scores": {
+    "basic_dag": 15,
+    "true_concurrency": 20,
+    "failure_skip": 20,
+    "timeout_cancel": 20,
+    "validation": 10,
+    "code_quality": 13
+   },
+   "time": 462.4,
+   "error": null,
+   "code_len": 3096,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Chunk-Split Streaming JSON Parser",
+   "status": "FAIL",
+   "score": 8,
+   "max_score": 100,
+   "scores": {
+    "basic": 0,
+    "char_at_a_time": 0,
+    "every_split_point": 0,
+    "random_chunkings": 0,
+    "boundaries": 0,
+    "malformed": 0,
+    "code_quality": 8
+   },
+   "time": 408.4,
+   "error": "Traceback (most recent call last):\n  File \"/tmp/tmpyl402_km.py\", line 307, in <module>\n    assert run_stream([src]) == EXPECT\n           ^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpyl402_km.py\", line 300, in run_stream\n    got = p.feed(c)\n          ^^^^^^^^^\n  File \"/tmp/tmpyl402_km.py\", line 16, in feed\n    results = self._process()\n              ^^^^^^^^^^^^^^^\n  File \"/tmp/tmpyl402_km.py\", line 101, in _process\n    raise ValueError(\"object: expected string key or '}'\")\nValueError: object: expected stri",
+   "code_len": 10421,
+   "wrote_solution_py": false
+  }
+ ]
+}

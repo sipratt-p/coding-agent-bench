@@ -1,0 +1,30 @@
+{
+ "display": "GLM-5.3-Flash TR3 budget trial",
+ "harness": "prime-agent",
+ "provider": "beast-glm53-tr3",
+ "model": "GLM-5.3-Flash-EXL3-4bpw",
+ "total": 93,
+ "possible": 100,
+ "pct": 93.0,
+ "results": [
+  {
+   "name": "Chunk-Split Streaming JSON Parser",
+   "status": "PASS",
+   "score": 93,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "char_at_a_time": 20,
+    "every_split_point": 20,
+    "random_chunkings": 10,
+    "boundaries": 10,
+    "malformed": 15,
+    "code_quality": 8
+   },
+   "time": 653.2,
+   "error": null,
+   "code_len": 12083,
+   "wrote_solution_py": true
+  }
+ ]
+}

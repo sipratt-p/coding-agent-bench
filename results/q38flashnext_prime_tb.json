@@ -1,0 +1,87 @@
+{
+ "display": "Qwen3.8-Flash-Next-FP8 (vLLM TP2, Beast :8001)",
+ "harness": "prime-agent",
+ "provider": "beast-qwen38fn",
+ "model": "Qwen3.8-Flash-Next",
+ "total": 307,
+ "possible": 400,
+ "pct": 76.8,
+ "results": [
+  {
+   "name": "POSIX Regex Engine (leftmost-longest)",
+   "status": "FAIL",
+   "score": 13,
+   "max_score": 100,
+   "scores": {
+    "basic": 0,
+    "leftmost_longest": 0,
+    "classes_anchors": 0,
+    "invalid_patterns": 0,
+    "performance": 0,
+    "code_quality": 13
+   },
+   "time": 328.9,
+   "error": "Traceback (most recent call last):\n  File \"/tmp/tmpde39_7di.py\", line 470, in <module>\n    assert regex_match(\"abc\", \"xxabcxx\") == (2, 5)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError",
+   "code_len": 13943,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Convergent Replicated Text (CRDT)",
+   "status": "PASS",
+   "score": 98,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "serializable": 5,
+    "concurrent_order": 25,
+    "out_of_order": 25,
+    "convergence_fuzz": 20,
+    "code_quality": 13
+   },
+   "time": 318.5,
+   "error": null,
+   "code_len": 9493,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Async DAG Orchestrator (cancellation semantics)",
+   "status": "PASS",
+   "score": 98,
+   "max_score": 100,
+   "scores": {
+    "basic_dag": 15,
+    "true_concurrency": 20,
+    "failure_skip": 20,
+    "timeout_cancel": 20,
+    "validation": 10,
+    "code_quality": 13
+   },
+   "time": 183.2,
+   "error": null,
+   "code_len": 4005,
+   "wrote_solution_py": true
+  },
+  {
+   "name": "Chunk-Split Streaming JSON Parser",
+   "status": "PASS_ON_RETRY",
+   "score": 98,
+   "max_score": 100,
+   "scores": {
+    "basic": 10,
+    "char_at_a_time": 20,
+    "every_split_point": 20,
+    "random_chunkings": 10,
+    "boundaries": 10,
+    "malformed": 15,
+    "code_quality": 13
+   },
+   "time": 275.9,
+   "error": null,
+   "code_len": 12632,
+   "wrote_solution_py": true,
+   "pct": 98.0,
+   "note": "First attempt produced an EMPTY work dir (prime-agent exited rc=0 at 299s having written nothing) and scored the 4/100 empty-input floor. Clean re-run wrote a 12,632-char solution.py that passes every test group. Original preserved in q38flashnext_prime_tb.json.orig-task4-empty."
+  }
+ ],
+ "note": "task4 re-run after a transient prime-agent no-output failure; see results[3].note"
+}

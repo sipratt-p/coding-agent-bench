@@ -1,0 +1,22 @@
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# runner scratch + alerts (regenerated on every run)
+work/
+prime-tb-work-*/
+cc-tb-work-*/
+*-bench-work*/
+ALERTS.md
+ALERTS_LATEST.json
+*.log
+
+# generated artifacts
+charts/
+judge_shots/
+.chrome-profile/
+
+# local result files you have not decided to commit yet
+results/local/

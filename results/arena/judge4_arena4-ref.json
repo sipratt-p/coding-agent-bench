@@ -1,0 +1,27 @@
+{
+ "frontend": {
+  "hierarchy": 7,
+  "typography": 7,
+  "polish": 7,
+  "states": 7,
+  "product_feel": 7
+ },
+ "backend": {
+  "structure": 7,
+  "indexing": 8,
+  "efficiency": 6,
+  "robustness": 7,
+  "readability": 7
+ },
+ "notes": "Clean dark-theme UI with clear visual hierarchy: search bar at top, facets left, results right, score breakdown with horizontal bars on click. Error state shows positional caret which is a nice touch, though the empty table header showing behind the error feels unpolished. Backend has proper inverted indexes with bisect for numeric ranges and a pred_cache, but facets endpoint iterates all matching candidates to recompute skill/location counts (no precomputed facet index), and scoring iterates all matched IDs without any top-k optimization, which will hurt at 150k scale with broad queries. Single-file monolith with inline HTML is functional but not how you'd ship production code; parsing, indexing, scoring, and HTTP should be separate modules. The query parser is well-structured with proper error positions.",
+ "ui_probe_notes": [
+  "load_event_within_6s=True",
+  "result_rows_rendered=4",
+  "error_state_visible=True"
+ ],
+ "screenshots": {
+  "results": "judge_shots/results.png",
+  "breakdown": "judge_shots/breakdown.png",
+  "error": "judge_shots/error.png"
+ }
+}

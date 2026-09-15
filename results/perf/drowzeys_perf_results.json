@@ -1,0 +1,73 @@
+{
+ "model": "DeepSeek-V4-Flash-Abliterated",
+ "ts": "2026-08-15 21:35:12",
+ "ttft_short_ms": {
+  "median": 21.6,
+  "min": 21.4,
+  "max": 35.3
+ },
+ "prefill": {
+  "prompt_tokens": 20418,
+  "ttft_long_s": 0.1,
+  "prefill_tok_s": 209290.0
+ },
+ "decode_single_tok_s": 198.4,
+ "concurrency_sweep": [
+  {
+   "n": 1,
+   "agg_tok_s": 254.9,
+   "per_stream_tok_s": 254.9,
+   "ttft_mean_s": 0.04,
+   "ttft_p95_s": 0.04,
+   "wall_s": 2.0
+  },
+  {
+   "n": 2,
+   "agg_tok_s": 307.1,
+   "per_stream_tok_s": 153.5,
+   "ttft_mean_s": 0.04,
+   "ttft_p95_s": 0.04,
+   "wall_s": 3.3
+  },
+  {
+   "n": 4,
+   "agg_tok_s": 581.1,
+   "per_stream_tok_s": 145.3,
+   "ttft_mean_s": 0.05,
+   "ttft_p95_s": 0.05,
+   "wall_s": 3.5
+  },
+  {
+   "n": 8,
+   "agg_tok_s": 651.2,
+   "per_stream_tok_s": 81.4,
+   "ttft_mean_s": 0.06,
+   "ttft_p95_s": 0.06,
+   "wall_s": 6.3
+  },
+  {
+   "n": 16,
+   "agg_tok_s": 1093.5,
+   "per_stream_tok_s": 68.3,
+   "ttft_mean_s": 0.11,
+   "ttft_p95_s": 0.13,
+   "wall_s": 7.5
+  },
+  {
+   "n": 32,
+   "agg_tok_s": 1661.9,
+   "per_stream_tok_s": 51.9,
+   "ttft_mean_s": 0.16,
+   "ttft_p95_s": 0.17,
+   "wall_s": 9.9
+  },
+  {
+   "n": 64,
+   "agg_tok_s": 2108.6,
+   "per_stream_tok_s": 32.9,
+   "ttft_mean_s": 0.25,
+   "ttft_p95_s": 0.34,
+   "wall_s": 15.3
+  }
+ ]
+}

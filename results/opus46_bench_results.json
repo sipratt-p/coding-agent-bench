@@ -1,0 +1,97 @@
+{
+  "Claude Opus 4.6 (API)": [
+    {
+      "name": "LRU Cache Implementation",
+      "status": "PASS",
+      "score": 97,
+      "max_score": 100,
+      "pct": 97.0,
+      "scores": {
+        "basic_correctness": 30,
+        "edge_capacity_1": 10,
+        "edge_update_lru": 15,
+        "edge_overwrite": 10,
+        "performance": 15,
+        "code_quality": 17
+      },
+      "time": 6.0,
+      "tokens": 475,
+      "error": null
+    },
+    {
+      "name": "Async Rate Limiter",
+      "status": "PASS",
+      "score": 96,
+      "max_score": 100,
+      "pct": 96.0,
+      "scores": {
+        "basic_try_acquire": 25,
+        "token_refill": 20,
+        "async_acquire": 20,
+        "multi_token": 10,
+        "code_quality": 21
+      },
+      "time": 29.1,
+      "tokens": 1655,
+      "error": null
+    },
+    {
+      "name": "Recursive Descent Parser",
+      "status": "PASS",
+      "score": 96,
+      "max_score": 100,
+      "pct": 96.0,
+      "scores": {
+        "basic_arithmetic": 15,
+        "operator_precedence": 20,
+        "parentheses": 15,
+        "unary_minus": 15,
+        "floating_point": 10,
+        "error_handling": 10,
+        "code_quality": 11
+      },
+      "time": 20.0,
+      "tokens": 1827,
+      "error": null
+    },
+    {
+      "name": "Trie with Autocomplete",
+      "status": "PASS",
+      "score": 97,
+      "max_score": 100,
+      "pct": 97.0,
+      "scores": {
+        "insert_search": 20,
+        "starts_with": 10,
+        "autocomplete_basic": 15,
+        "autocomplete_limit": 10,
+        "delete_basic": 15,
+        "delete_preserves_prefix": 10,
+        "code_quality": 17
+      },
+      "time": 14.8,
+      "tokens": 1171,
+      "error": null
+    },
+    {
+      "name": "Event Emitter with Typed Events",
+      "status": "PASS",
+      "score": 97,
+      "max_score": 100,
+      "pct": 97.0,
+      "scores": {
+        "basic_on_emit": 15,
+        "multiple_listeners": 10,
+        "unsubscribe_return": 15,
+        "once": 15,
+        "off": 10,
+        "remove_all": 10,
+        "kwargs": 5,
+        "code_quality": 17
+      },
+      "time": 9.3,
+      "tokens": 657,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+PASS  server_starts_10s 
+PASS  help_exit0 
+PASS  bulk_small 
+PASS  bulk_reject_missing_id 
+PASS  get_candidate 
+PASS  get_404 
+FAIL  term_basic — q='python' len 0 vs 3
+FAIL  quoted_phrase — q='"machine learning"' len 0 vs 1
+FAIL  skill_years — q='skill:python>=7' len 0 vs 1
+FAIL  numeric_preds — q='salary<=140000 years>=5' len 0 vs 6
+FAIL  bool_nesting — q='(python OR go) AND NOT tag:contractor' len 0 vs 5
+FAIL  implicit_and — q='location:berlin python' len 0 vs 2
+FAIL  case_insensitive — q='LOCATION:Berlin PYTHON or GO' len 0 vs 6
+FAIL  dedupe_term_skill — q='python skill:python python' len 0 vs 2
+FAIL  not_no_score — q='go AND NOT python' len 0 vs 3
+FAIL  tie_break — q='go' len 0 vs 4
+FAIL  salary_fit_tiers — q='go salary<=150000' len 0 vs 4
+FAIL  remote_bonus — q='python remote:true' len 0 vs 2
+FAIL  breakdown_components — (200, [], [{'id': 1, 'name': 'Ada', 'title': 'Senior ML Engineer', 'score': 39.0, 'breakdown': {'skills': 16.0, 'title': 0.0, 'recency': 15, 'salary_fit': 5, 'remote': 3}}])
+PASS  pagination_slice 
+PASS  page_size_clamp 
+PASS  page_past_end 
+PASS  parse_error_400 
+PASS  unknown_field_400 
+PASS  facets_small 
+PASS  malformed_json_400 
+[grader] generating 150k pool...
+PASS  big_ingest_20s 
+[grader] big-pool correctness (oracle cross-check)...
+    big-pool mismatch on 'skill:python>=3 location:berlin': first diff app=(74676,24.0) oracle=(71735,35.0) total 2244 vs 2244
+    big-pool mismatch on '(python OR "machine learning") AND salary<=180000': first diff app=(120390,46.0) oracle=(96761,60.0) total 43117 vs 43117
+    big-pool mismatch on 'NOT remote:true salary>=100000 skill:java': first diff app=(125910,29.0) oracle=(75208,35.0) total 10669 vs 10669
+FAIL  big_correctness 
+[grader] perf batch...
+PASS  perf_batch_5s 
+PASS  perf_facets_2s 
+PASS  ui_element_ids 
+PASS  ui_selfcontained 
+
+SCORE 18/32

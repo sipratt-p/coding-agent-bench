@@ -1,0 +1,192 @@
+{
+  "MiniMax M2.7 (MLX 4-bit)": [
+    {
+      "name": "LRU Cache Implementation",
+      "status": "FAIL",
+      "score": 13,
+      "max_score": 100,
+      "pct": 13.0,
+      "scores": {
+        "basic_correctness": 0,
+        "edge_capacity_1": 0,
+        "edge_update_lru": 0,
+        "edge_overwrite": 0,
+        "performance": 0,
+        "code_quality": 13
+      },
+      "time": 79.3,
+      "tokens": 1820,
+      "error": "Traceback (most recent call last):\n  File \"/var/folders/n8/w6rfb2ws1d11yzkf55kl0mvm0000gn/T/tmps816v2gq.py\", line 21, in <module>\n    cache.put(1, 1)\n    ^^^^^^^^^\nAttributeError: 'LRUCache' object ha"
+    },
+    {
+      "name": "Async Rate Limiter",
+      "status": "FAIL",
+      "score": 21,
+      "max_score": 100,
+      "pct": 21.0,
+      "scores": {
+        "basic_try_acquire": 0,
+        "token_refill": 0,
+        "async_acquire": 0,
+        "multi_token": 0,
+        "code_quality": 21
+      },
+      "time": 30.9,
+      "tokens": 1593,
+      "error": "File \"/var/folders/n8/w6rfb2ws1d11yzkf55kl0mvm0000gn/T/tmpdyjpcav5.py\", line 7\n    Better approach: Use asyncio.Condition to wait until tokens >= requested. In acquire: async with condition: while tok"
+    },
+    {
+      "name": "Recursive Descent Parser",
+      "status": "FAIL",
+      "score": 13,
+      "max_score": 100,
+      "pct": 13.0,
+      "scores": {
+        "basic_arithmetic": 0,
+        "operator_precedence": 0,
+        "parentheses": 0,
+        "unary_minus": 0,
+        "floating_point": 0,
+        "error_handling": 0,
+        "code_quality": 13
+      },
+      "time": 30.9,
+      "tokens": 1610,
+      "error": "File \"/var/folders/n8/w6rfb2ws1d11yzkf55kl0mvm0000gn/T/tmpi5yq5st1.py\", line 47\n    We'll create a class Token with type and value.\n      ^\nSyntaxError: unterminated string literal (detected at line 4"
+    },
+    {
+      "name": "Trie with Autocomplete",
+      "status": "PASS",
+      "score": 97,
+      "max_score": 100,
+      "pct": 97.0,
+      "scores": {
+        "insert_search": 20,
+        "starts_with": 10,
+        "autocomplete_basic": 15,
+        "autocomplete_limit": 10,
+        "delete_basic": 15,
+        "delete_preserves_prefix": 10,
+        "code_quality": 17
+      },
+      "time": 31.2,
+      "tokens": 1737,
+      "error": null
+    },
+    {
+      "name": "Event Emitter with Typed Events",
+      "status": "FAIL",
+      "score": 17,
+      "max_score": 100,
+      "pct": 17.0,
+      "scores": {
+        "basic_on_emit": 0,
+        "multiple_listeners": 0,
+        "unsubscribe_return": 0,
+        "once": 0,
+        "off": 0,
+        "remove_all": 0,
+        "kwargs": 0,
+        "code_quality": 17
+      },
+      "time": 31.2,
+      "tokens": 1552,
+      "error": "File \"/var/folders/n8/w6rfb2ws1d11yzkf55kl0mvm0000gn/T/tmptlfqlf4y.py\", line 13\n    But we need to handle removal after call for once. But we also need to remove from the list. We can have the wrapper"
+    }
+  ],
+  "Qwen 3.6-35B-A3B (MLX 4-bit)": [
+    {
+      "name": "LRU Cache Implementation",
+      "status": "FAIL",
+      "score": 17,
+      "max_score": 100,
+      "pct": 17.0,
+      "scores": {
+        "basic_correctness": 0,
+        "edge_capacity_1": 0,
+        "edge_update_lru": 0,
+        "edge_overwrite": 0,
+        "performance": 0,
+        "code_quality": 17
+      },
+      "time": 18.6,
+      "tokens": 1500,
+      "error": "File \"/var/folders/n8/w6rfb2ws1d11yzkf55kl0mvm0000gn/T/tmpwceh8m9x.py\", line 3\n    class LRUCache:\nIndentationError: unexpected indent"
+    },
+    {
+      "name": "Async Rate Limiter",
+      "status": "FAIL",
+      "score": 21,
+      "max_score": 100,
+      "pct": 21.0,
+      "scores": {
+        "basic_try_acquire": 0,
+        "token_refill": 0,
+        "async_acquire": 0,
+        "multi_token": 0,
+        "code_quality": 21
+      },
+      "time": 17.3,
+      "tokens": 1500,
+      "error": "File \"/var/folders/n8/w6rfb2ws1d11yzkf55kl0mvm0000gn/T/tmpb9kjvgan.py\", line 3\n    class RateLimiter:\nIndentationError: unexpected indent"
+    },
+    {
+      "name": "Recursive Descent Parser",
+      "status": "FAIL",
+      "score": 8,
+      "max_score": 100,
+      "pct": 8.0,
+      "scores": {
+        "basic_arithmetic": 0,
+        "operator_precedence": 0,
+        "parentheses": 0,
+        "unary_minus": 0,
+        "floating_point": 0,
+        "error_handling": 0,
+        "code_quality": 8
+      },
+      "time": 17.3,
+      "tokens": 1500,
+      "error": "Traceback (most recent call last):\n  File \"/var/folders/n8/w6rfb2ws1d11yzkf55kl0mvm0000gn/T/tmpx7ji587g.py\", line 26, in <module>\n    assert evaluate(\"2 + 3\") == 5.0\n           ^^^^^^^^\nNameError: nam"
+    },
+    {
+      "name": "Trie with Autocomplete",
+      "status": "PARTIAL",
+      "score": 72,
+      "max_score": 100,
+      "pct": 72.0,
+      "scores": {
+        "insert_search": 20,
+        "starts_with": 10,
+        "autocomplete_basic": 15,
+        "autocomplete_limit": 10,
+        "delete_basic": 0,
+        "delete_preserves_prefix": 0,
+        "code_quality": 17
+      },
+      "time": 17.3,
+      "tokens": 1500,
+      "error": "Traceback (most recent call last):\n  File \"/var/folders/n8/w6rfb2ws1d11yzkf55kl0mvm0000gn/T/tmpvc5itx1x.py\", line 108, in <module>\n    assert t.delete(\"app\") == True\n           ^^^^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "name": "Event Emitter with Typed Events",
+      "status": "FAIL",
+      "score": 17,
+      "max_score": 100,
+      "pct": 17.0,
+      "scores": {
+        "basic_on_emit": 0,
+        "multiple_listeners": 0,
+        "unsubscribe_return": 0,
+        "once": 0,
+        "off": 0,
+        "remove_all": 0,
+        "kwargs": 0,
+        "code_quality": 17
+      },
+      "time": 17.3,
+      "tokens": 1500,
+      "error": "File \"/var/folders/n8/w6rfb2ws1d11yzkf55kl0mvm0000gn/T/tmparb1mo3w.py\", line 3\n    class EventEmitter:\nIndentationError: unexpected indent"
+    }
+  ]
+}

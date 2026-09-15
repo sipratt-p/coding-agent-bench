@@ -1,0 +1,40 @@
+{
+ "model": "ornith-35b-bf16",
+ "base": "http://REDACTED-LAN-HOST:11500",
+ "decode_code_edit_tok_s": 53.2,
+ "decode_prose_tok_s": 68.1,
+ "prefill": [
+  {
+   "prompt_tokens": 53968,
+   "ttft_s": 28.0,
+   "prefill_tok_s": 1928.9
+  },
+  {
+   "prompt_tokens": 53968,
+   "ttft_s": 28.0,
+   "prefill_tok_s": 1929.4
+  }
+ ],
+ "concurrency": [
+  {
+   "c": 1,
+   "agg_tok_s": 67.1,
+   "per_stream_tok_s": 67.1
+  },
+  {
+   "c": 2,
+   "agg_tok_s": 70.0,
+   "per_stream_tok_s": 35.0
+  },
+  {
+   "c": 4,
+   "agg_tok_s": 112.1,
+   "per_stream_tok_s": 28.0
+  },
+  {
+   "c": 8,
+   "agg_tok_s": 92.9,
+   "per_stream_tok_s": 11.6
+  }
+ ]
+}
