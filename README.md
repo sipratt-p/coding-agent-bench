@@ -125,7 +125,10 @@ SGLang at 293 (20k cap).
 Prime Agent 495 (clean weights) / 484 (community "drowzeys" build) / 394 (one
 task where the agent wrote no file), Claude Code 485, OpenClaw 483-485, the
 official `dsh` 481. Against the same model's 453-459 direct-API scores that is a
-+25-40 point harness effect on a suite that is already near its ceiling.
++25-40 point harness effect on a suite that is already near its ceiling. These
+rows span three builds of the model: DeepSeek's own DSpark weights ("clean"),
+apetersson's abliterated 0731 build and drowzeys' abliterated 0731 build; see
+[Credits](#credits) for which result file used which.
 
 **Harness-assisted tiebreakers (/400, Prime Agent), three-run means:**
 
@@ -134,7 +137,7 @@ official `dsh` 481. Against the same model's 453-459 direct-API scores that is a
 | Qwen3.8-Flash-Next-Uncensored FP8 + MTP (vLLM, 2 GPUs) | **380.0** | 392, 359, 389 |
 | GLM-5.3-Flash EXL3 4bpw, 8k thinking budget | **372.3** | 389, 359, 369 |
 | Qwen3.8-Flash-Next abliterated NVFP4 (1 GPU) | **300.3** | 274, 359, 268 |
-| DeepSeek V4-Flash-Abliterated (vLLM + DSpark) | **288.7** | 287, 197, 382 |
+| DeepSeek V4-Flash-Abliterated, apetersson's 0731 build (vLLM + DSpark) | **288.7** | 287, 197, 382 |
 
 Single-run tiebreaker rows (GLM-5.3-Flash MLX 6-bit 389, Ornith-35B bf16 297,
 DeepSeek V4-Flash-Abliterated 304, Qwen3.8-27B-ablit 295, …) are in the full
@@ -251,6 +254,22 @@ after the model works), and one run explicitly recorded as invalid (its bridge
 was down). Result files are byte-identical to the originals except that private
 hostnames, IPs and home-directory paths were redacted; see
 [SECRETS-CHECK.md](SECRETS-CHECK.md).
+
+## Credits
+
+The suites, runners, harness runs and measurements are my lab's (my lab: a team of AI agents I direct). The
+models are other people's work. The DeepSeek V4-Flash rows used three builds of the same model, all served with
+Fraser Price's DSpark run script ([fraserprice/DeepSeek-V4-Flash-DSpark](https://huggingface.co/fraserprice/DeepSeek-V4-Flash-DSpark),
+MIT) on the [local-inference-lab/rtx6kpro](https://github.com/local-inference-lab/rtx6kpro) vLLM image:
+
+| Result files | Weights |
+|---|---|
+| `official_*` ("clean weights") | DeepSeek's [DeepSeek-V4-Flash-DSpark](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-DSpark) |
+| `ds4_*`, `dsv4ablit_*`, `h2h/dsv4_ablit_*` | [apetersson/DeepSeek-V4-Flash-0731-Abliterated-FP8](https://huggingface.co/apetersson/DeepSeek-V4-Flash-0731-Abliterated-FP8) (MIT), an abliteration of the 0731 release using a refusal direction from drowzeys |
+| `drowzeys_*`, `arena/*-drowzeys*` | drowzeys' abliterated 0731 build, [drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-Anchored-Tensors](https://huggingface.co/drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-Anchored-Tensors) |
+
+The only abliteration in this repository made by my lab is Ornith-1.5-35B "abliterated-ours", documented in
+[refusal-ablation-eval](https://github.com/sipratt-p/refusal-ablation-eval).
 
 ## License
 
